@@ -1,0 +1,30 @@
+.main {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;   
+    position: relative;
+    border: 0px solid;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    filter: brightness(70%);
+}
+
+.main > img {
+    display: block;
+    margin-top: -25%;
+}
+
+
+
+  /* .main::after { 
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.373);
+    position: absolute;
+}   */
