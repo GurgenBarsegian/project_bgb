@@ -8,7 +8,7 @@ export default function NavMenu() {
     <Link to='/'>Main Page</Link>
     <Link to='/categories'>Categories</Link>
     <Link to='/all_products'>All products</Link>
-    <Link to='/all_sales'>All sales</Link>
+    <Link to='/sales'>All sales</Link>
 </nav>
   )
 }

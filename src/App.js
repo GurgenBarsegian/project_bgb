@@ -7,6 +7,7 @@ import AllProductsPage from './pages/AllProductsPage';
 import AllSalesPage from './pages/AllSalesPage';
 import CartPage from './pages/CartPage';
 import NotFoundPage from './pages/NotFoundPage';
+import CategoriesPage from './pages/CategoriesPage';
 
 
 function App() {
