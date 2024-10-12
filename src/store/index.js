@@ -3,7 +3,6 @@ import {thunk} from 'redux-thunk'
 import { categoriesReducer } from './reducers/categoriesReducer';
 
 import { productsReducer } from './reducers/productsReducer';
-=======
 import { newClientsReducer } from './reducers/newClientsReducer';
 
 
@@ -11,9 +10,7 @@ import { newClientsReducer } from './reducers/newClientsReducer';
 
 const rootReducer = combineReducers({   
     categories: categoriesReducer,
-
-    products: productsReducer
-
+    products: productsReducer,
     newClient: newClientsReducer
 
 })
