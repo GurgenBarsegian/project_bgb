@@ -1,5 +1,6 @@
 import React from 'react'
-import {useDispatch, useSelector } from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
+import { useEffect } from 'react';
 import { getCategories } from '../../requests/categories';
 import CategoriesContainer from '../../components/CategoriesContainer';
 
