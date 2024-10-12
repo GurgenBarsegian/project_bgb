@@ -7,6 +7,6 @@ export default function CategoryCard({title, image}) {
 
       <img src={`http://localhost:3333${image}`} alt={title} />
       <p>{title}</p>
-    </div>
+       </div>
   )
 }
