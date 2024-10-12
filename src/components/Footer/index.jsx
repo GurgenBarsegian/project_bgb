@@ -1,8 +1,9 @@
 import React from 'react'
+import s from './index.module.css'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={s.footer}>
       <h2>Contact</h2>
 
       <div>
