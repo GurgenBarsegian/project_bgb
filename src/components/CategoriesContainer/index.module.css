@@ -1,0 +1,8 @@
+.categories_container{
+    width: auto;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px;
+ 
+}
