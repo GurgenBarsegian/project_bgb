@@ -7,6 +7,8 @@ export default function FirstOrderSale() {
 
   const dispatch = useDispatch();
 
+  const array = [];
+
   const submit = (e) => {
     e.preventDefault();
 
@@ -15,12 +17,12 @@ export default function FirstOrderSale() {
     const newClient = {
       id: Date.now(),
       name: name.value,
-      phone_number: phone_number.value,
-      email: email.value,
+      phone_number: +phone_number.value,
+      email: email.value
     };
 
     dispatch(addNewClientAction(newClient));
-
+console.log( dispatch(addNewClientAction(newClient)));
     e.target.reset();
   };
 
@@ -31,7 +33,7 @@ export default function FirstOrderSale() {
         <input type="text" placeholder="Name" name="name" />
       </label>
       <label>
-       <input type="" placeholder="Phone number" name="phone number" />
+       <input type="" placeholder="Phone number" name="phone_number" />
       </label>
       <label>
         <input type="text" placeholder="Email" name="email" />
@@ -40,3 +42,4 @@ export default function FirstOrderSale() {
     </form>
   )
 }
+
