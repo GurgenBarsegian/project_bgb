@@ -3,6 +3,8 @@ import CategoriesPageForMain from '../CategoriesPageForMain'
 
 export default function MainPage() {
   return (
-    <div>MainPage</div>
+    <div>
+        <CategoriesPageForMain/>
+    </div>
   )
 }
