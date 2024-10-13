@@ -2,12 +2,36 @@ import React from 'react'
 import s from './index.module.css'
 import { useDispatch } from 'react-redux';
 import { addNewClientAction } from '../../store/reducers/newClientsReducer';
+import { useForm } from 'react-hook-form';
+
 
 export default function FirstOrderSale() {
 
   const dispatch = useDispatch();
 
-  const array = [];
+//   const { register, handleSubmit, formState: {errors }, formState } = useForm({
+//     mode: 'onBlur',
+//     defaultValues: {
+//       name: '',
+//       phone_number: '',
+//       email: ''
+//     }
+//   });
+
+//   const onSubmit = data => console.log(data);
+//   console.log(errors, formState);
+//   return (
+//     <form onSubmit={handleSubmit(onSubmit)}>
+//       <label className={s(styles.label, {
+//         [styles.errorLaber] : errors.email
+//       })}>
+//         email
+//       </label>
+//       <input type="text" placeholder="Email" name="email" />
+//     </form>
+//   )
+  
+// }
 
   const submit = (e) => {
     e.preventDefault();

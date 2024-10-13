@@ -1,3 +1,11 @@
 .footer{
     width: 1360px;
 }
+
+.footer svg {
+    color: black;
+}
+
+.footer {
+    display: block;
+}
