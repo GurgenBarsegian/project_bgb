@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../requests/products';
 import ProductsContainer from '../../components/ProductsContainer';
+import ChangeStateProducts from '../../components/ChangeStateProducts';
 
 export default function AllProductsPage() {
 
@@ -14,6 +15,7 @@ export default function AllProductsPage() {
   return (
     <div>
       <h3>All products:</h3>
+      <ChangeStateProducts />
       <ProductsContainer products={allProductsState} />
     </div>
   )
