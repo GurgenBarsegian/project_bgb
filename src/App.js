@@ -8,16 +8,19 @@ import AllSalesPage from './pages/AllSalesPage';
 import CartPage from './pages/CartPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CategoriesPage from './pages/CategoriesPage';
+import CategoriesPageForMain from './pages/CategoriesPageForMain';
+
+
 
 
 function App() {
   return (
     <div >
   <Header/>
-  <Routes>
+    <Routes>
   <Route path='/' element={<MainPage/>}/>
         <Route path='/categories' element={<CategoriesPage/>}/>
-        <Route path='/all_products' element={<AllProductsPage/>}/>
+        <Route path='/products/all' element={<AllProductsPage/>}/>
         <Route path='/sales' element={<AllSalesPage/>}/>
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
