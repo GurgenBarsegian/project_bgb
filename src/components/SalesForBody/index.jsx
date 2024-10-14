@@ -32,7 +32,7 @@ console.log(randomItems);
 
   return (
     <div className={s.body_sales}>
-        <h2>Sale</h2>
+        <h2>Sales</h2>
         <ProductsContainer products = {randomItems}/>
     </div>
   )
