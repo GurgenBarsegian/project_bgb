@@ -32,8 +32,11 @@ console.log(randomItems);
 
   return (
     <div className={s.body_sales}>
+      <div>
+
         <h2>Sales</h2>
-        <ProductsContainer products = {randomItems}/>
+      </div>
+      <ProductsContainer products = {randomItems}/>
     </div>
   )
 }
