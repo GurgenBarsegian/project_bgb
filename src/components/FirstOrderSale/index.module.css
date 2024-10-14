@@ -12,7 +12,8 @@
     background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
-  
+    background-image: no-repeat, url(https://s3-alpha-sig.figma.com/img/a3b6/9a2d/df1657885446d076034889d1f0f9f714?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBvzPSzo5rkcAn2hKXz5DR6ndmzIqHN5xMbwF-coiHjLKhGtO7tDxqxkIDVmls1PoWir7lA~Vor6Z6oHq7Jk1NIR--3jhQ5RHqFv4OuZnNJTtPGwe0CatTxSEpXTxsMa3RHIjjhDvi34f0EmNqNNXKFF53Hco59kQUormkzbx~WvYhcOCCQbeCQTP42vUejkDuadWHcvgUgk-QqwAp~SB9mxZ09bO5z4XLdDwQU2h3aJ2BT3FlqrXcp-dKyvFEYktWRnWIIC0PL8AiEHzqzhUHtSt-ZkBBjk1t22jgOSPr8l35bkxiRQqtpzHMPp8tT-hGdSDg~59~V20Z55GmzE5w__);
+    background-size: cover;
 }
 
 .form  button {
