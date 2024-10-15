@@ -1,0 +1,22 @@
+.category_card {
+  display: flex;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(177, 177, 177);
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  justify-content:space-around;
+ 
+}
+
+.category_card img {
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.category_card  p {
+
+ align-self: center;
+}
