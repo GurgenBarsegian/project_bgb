@@ -10,7 +10,6 @@ export default function FirstOrderSale() {
   //   const array = [];
 
 
-
   const submit = (e) => {
     e.preventDefault();
     const { name, phone_number, email } = e.target;
