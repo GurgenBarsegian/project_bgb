@@ -4,8 +4,8 @@ import s from './index.module.css';
 
 export default function ProductsCard({ id, image, title, price, discont_price}) {
 
-  console.log(image);
-  
+ 
+  const discont = discont_price === null ? "" : `Discont: ${discont_price}`;
 
   return (
     <div  className={s.card}>
@@ -13,13 +13,6 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
       <div>
         <p>{ title }</p>
         <p>{ price }$</p>
-      </div>
-      <div>
-          { 
-            discont_price === null
-            ? ''
-            : `Discont: ${discont_price}`
-          }
       </div>
     </div>
 
