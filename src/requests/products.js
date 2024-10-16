@@ -7,3 +7,4 @@ export const getProducts = (dispatch) => {
     .then(json => dispatch(loadAllProductsAction(json)))
 
 }
+

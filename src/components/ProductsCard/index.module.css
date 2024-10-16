@@ -1,7 +1,7 @@
 .card {
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0px ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,28 +10,28 @@
     position: relative;
 }
 
-.card a {
-    text-decoration: none;
-    color: black;
-}
 
 .card img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    border-bottom: 1px solid grey;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card p {
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
+    font-size:  20px;
 }
 
-.card > div{
-    border: 1px solid black;
-}
 
 .card > svg {
     position: absolute;
     cursor: pointer;
     top: 5px;
     right: 10px;
+}
+.price{
+    text-decoration: line-through;
 }

@@ -1,44 +1,71 @@
 .form {
+  border: 1px solid black;
+  width: auto;
+  border-radius: 12px;
+  height: 450px;
+  
+  background: linear-gradient(80.46deg, #87933d -0.68%, #55610b 66.66%);
 
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 50vh;
-    margin: 50px 50px 20px 10px;
-    left: 40px;
-    padding: 32px 32px 0px 32px;
-    gap: 24px;
-    border-radius: 2%;
-    background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
+  top: 1416px;
+  left: 40px;
+  padding: 32px 32px 0px 32px;
+  gap: 24px;
+  opacity: 0px;
   
 }
 
-.form  button {
-    width: 165px;
-    height: auto;
-    text-align: left;
+.form > h2 {
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70.4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form > form {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:end;
+  /* background-image: url(https://s3-alpha-sig.figma.com/img/a3b6/9a2d/df1657885446d076034889d1f0f9f714?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gJ6JSn6ZwNG7Rd~QQ8FO2vDDIOB4dyKVRX2t~niCsDrPdOeueGa7PWL4nLCBNHbgVJUwNpZfAr0e7FMJqy7dGpmREl6uUCedpDi7C~wyRnTiDdD1R24fPQVZYCA6dKMbMxs6frsgvUTTAeWooYfaysCsK672t9S1AOp1DDMHD-tQY4f0iVf7ACkrYCxnTcjZ0Xu6laJVzIBbu95RJIz3ImTp1qObM808vnCAo2CVs9HhV~6Iq9YOyU2LtNyuqZw-BfCNCQcq8EOuGqHRmopN3N2K3QVqLJWzTrJMgabQxiY6yXca~AzFGIgx~pdzDup4bti2SjhDLzWBroJnUfcl0A__); */
+background-size: 40%;
+background-position: 0%;
+margin-top: 80px;
+gap:15px
+}
+
+
+.form > form > input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  width: 380px;
+  height: 30px;
+  padding: 16px 32px 16px 32px;
+  cursor: pointer;
+
+}
+
+.form > form > button {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: black;
+    line-height:0.2;
+    width: 380px;
+    height: 30px;
+    padding: 16px 32px 16px 32px;
+    font-size: 18px;
     cursor: pointer;
- 
+  }
+
+  .form > form > button:hover {
+    background-color: antiquewhite;
+  }
+  .form > form > input::placeholder {
+  color: white;
+  opacity: 0.7;
 }
-
-.form > h2 { 
-    margin-top: 0;
-    color: #FFFFFF;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 70.4px;
-    text-align: center;
-
-}
-
-.form > form > label > input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-
-}
-
