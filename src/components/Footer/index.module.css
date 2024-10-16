@@ -1,11 +1,123 @@
-.footer{
-    width: 1360px;
-}
 
-.footer svg {
-    color: black;
+* {
+    font-family: Montserrat;
+
 }
 
 .footer {
-    display: block;
+    max-width: 1, 440px;
+    max-height: 948px;
+    top: 2594px;
+    padding: 0px 40px 80px 40px;
+    gap: 40px;
+
+}
+
+.contactText {
+    font-size: 64px;
+}
+
+.cardsWrapper {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.phone {
+    width: 780px;
+    height: 150px;
+    padding: 32px;
+    gap: 16px;
+    background: #F2F6D3;
+    border-radius: 10px;
+
+}
+
+.phone :first-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #8B8B8B;
+}
+
+.phone :last-child {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.socials {
+    width: 548px;
+    height: 150px;
+    padding: 32px;
+    gap: 16px;
+    background: #F2F6D3;
+    border-radius: 10px;
+
+}
+
+.socials :first-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #8B8B8B;
+}
+
+
+.address {
+    width: 780px;
+    height: 150px;
+    padding: 32px;
+    gap: 16px;
+    background: #F2F6D3;
+    border-radius: 10px;
+}
+
+.address :first-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #8B8B8B;
+}
+
+.address :last-child {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.hours {
+    width: 548px;
+    height: 150px;
+    padding: 32px;
+    gap: 16px;
+    border-radius: 10px;
+    background-color: #f2f6d3;
+}
+
+.hours :first-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #8B8B8B;
+}
+.hours :last-child{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #424436;
+    margin-top: 16px;
+    
+}
+
+
+.map {
+    width: 1440px;
+    height: 350px;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
 }
