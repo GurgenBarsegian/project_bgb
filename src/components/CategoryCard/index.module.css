@@ -5,18 +5,18 @@
   color: rgb(177, 177, 177);
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
-  justify-content:space-around;
- 
+  justify-content: space-around;
+  gap: 16px;
+  opacity: 0px;
 }
 
 .category_card img {
-  width: 300px;
-  height: 150px;
-  object-fit: contain;
+  width: 316px;
+  height: 392px;
+  object-fit: cover;
   border-radius: 20px;
 }
 
-.category_card  p {
-
- align-self: center;
+.category_card p {
+  align-self: center;
 }
