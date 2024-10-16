@@ -1,13 +1,10 @@
-const LOAD_ALL_PRODUCTS = 'LOAD_ALL_PRODUCTS';
+import { loadAllProductsAction } from "../store/reducers/productsReducer"
 
-export const loadAllProductsAction = products => ({type: LOAD_ALL_PRODUCTS, payload: products})
+export const getProducts = (dispatch) => {
 
-export const productsReducer = (state=[], action) => {
+    fetch('http://localhost:3333/products/all')
+    .then(res=> res.json())
+    .then(json => dispatch(loadAllProductsAction(json)))
 
-    if (action.type === LOAD_ALL_PRODUCTS){
-        return action.payload
-    }
-
-    return state
 }
 
