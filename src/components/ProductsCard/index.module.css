@@ -32,3 +32,6 @@
     top: 5px;
     right: 10px;
 }
+.price{
+    text-decoration: line-through;
+}
