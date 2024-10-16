@@ -1,20 +1,27 @@
-import React from 'react'
-import s from './index.module.css'
+import React from 'react';
+import s from './index.module.css';
+import { IoLogoWhatsapp } from "react-icons/io";
+import { RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
     <footer className={s.footer}>
       <h2 className={s.contactText}>Contact</h2>
 
+
       <div className={s.cardsWrapper}>
         <div className={s.phone}>
+
           <p>Phone</p>
           <p>+49 999 999 99 99</p>
         </div>
 
         <div className={s.socials}>
           <p>Socials</p>
-          <p>Icons</p>
+
+          <div><a href="https://www.instagram.com" target="_blank" class="link1"><RiInstagramFill /></a></div>
+          <div><a href="https://web.whatsapp.com" target="_blank" class="link1"><IoLogoWhatsapp /></a></div>
+
         </div>
 
         <div className={s.address}>
@@ -35,3 +42,4 @@ export default function Footer() {
     </footer>
   )
 }
+

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import NavMenu from '../NavMenu'
-import s from './index.module.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import NavMenu from '../NavMenu';
+import s from './index.module.css';
 
 export default function Header() {
   return (

@@ -1,0 +1,44 @@
+.form {
+
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 50vh;
+    margin: 50px 50px 20px 10px;
+    left: 40px;
+    padding: 32px 32px 0px 32px;
+    gap: 24px;
+    border-radius: 2%;
+    background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+  
+}
+
+.form  button {
+    width: 165px;
+    height: auto;
+    text-align: left;
+    cursor: pointer;
+ 
+}
+
+.form > h2 { 
+    margin-top: 0;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;
+
+}
+
+.form > form > label > input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
