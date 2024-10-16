@@ -1,4 +1,3 @@
-
 import React from "react";
 import s from "./index.module.css";
 import { addNewCustomer } from "../../requests/post";
