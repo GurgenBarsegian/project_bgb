@@ -17,7 +17,7 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
   
   }
 
-  const discontProcent = 100 - (discont_price / price) * 100;
+  const discontProcent = Math.round(100 - ((discont_price / price) * 100));
 
   return (
     <div  className={s.card}>
@@ -25,7 +25,7 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
       <div>
         <p>{ title }</p>
         <p>{tempPrice()}</p>
-        <p>{discontProcent}</p>
+        <span className={s.discont}>{discontProcent}%</span>
       </div>
     </div>
 
