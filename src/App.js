@@ -10,11 +10,13 @@ import NotFoundPage from './pages/NotFoundPage';
 import CategoriesPage from './pages/CategoriesPage';
 
 
+
+
 function App() {
   return (
     <div >
   <Header/>
-  <Routes>
+    <Routes>
   <Route path='/' element={<MainPage/>}/>
         <Route path='/categories' element={<CategoriesPage/>}/>
         <Route path='/all_products' element={<AllProductsPage/>}/>

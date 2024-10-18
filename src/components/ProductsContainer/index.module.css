@@ -1,0 +1,7 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 900px;
+    margin: 20px auto;
+}

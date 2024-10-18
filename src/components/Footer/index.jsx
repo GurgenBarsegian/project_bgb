@@ -8,8 +8,10 @@ export default function Footer() {
     <footer className={s.footer}>
       <h2 className={s.contactText}>Contact</h2>
 
+
       <div className={s.cardsWrapper}>
         <div className={s.phone}>
+
           <p>Phone</p>
           <p>+49 999 999 99 99</p>
         </div>
