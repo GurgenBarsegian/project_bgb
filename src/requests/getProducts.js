@@ -12,9 +12,19 @@
 //     }
    
 // }
+import { loadAllProductsAction } from "../store/reducers/productsReducer";
 
-export const getProducts = () => {
+export const getProducts = (dispatch) => {
     fetch('http://localhost:3333/products/all')
-    .the(res => res.json())
-    .then(json => console.log(json))
+    .then(res => res.json())
+    .then(json => dispatch(loadAllProductsAction(json)))
+};
+
+export const getProductsByCategories = () => {
+
+    return dispatch => {
+        fetch(`http://localhost:3333/categories/1`)
+        .then(res=> res.json())
+        .then(json => console.log(json))
+    }
 }

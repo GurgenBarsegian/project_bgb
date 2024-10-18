@@ -2,49 +2,12 @@ import React from "react";
 import s from "./index.module.css";
 import { addNewCustomer } from "../../requests/post";
 
+
 export default function FirstOrderSale() {
   //   const dispatch = useDispatch();
 
   //   const array = [];
 
-  //   const submit = (e) => {
-  //     e.preventDefault();
-
-  //     const { name, phone_number, email } = e.target;
-
-  //     const newClient = {
-  //       id: Date.now(),
-  //       name: name.value,
-  //       phone_number: +phone_number.value,
-  //       email: email.value,
-  //     };
-
-  //     dispatch(addNewClientAction(newClient));
-  //     console.log(dispatch(addNewClientAction(newClient)));
-  //     e.target.reset();
-  //   };
-
-  // import { addNewProduct } from '../../requests/products';
-
-  // export default function AddProductForm({ createNewProduct }) {
-
-  //     const submit = e => {
-  //         e.preventDefault();
-
-  //         const { title, description, price, image } = e.target;
-
-  //         const newProduct = {
-  //             title: title.value,
-  //             price: +price.value,
-  //             description: description.value,
-  //             categoryId: 1,
-  //             images: [image.value]
-  //         }
-
-  //         addNewProduct(newProduct, createNewProduct);
-
-  //         e.target.reset()
-  //     }
 
   const submit = (e) => {
     e.preventDefault();
