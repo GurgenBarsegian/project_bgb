@@ -1,4 +1,6 @@
 import React from 'react'
+import { RiInstagramFill } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io";
 import s from './index.module.css'
 
 export default function Footer() {
@@ -13,8 +15,9 @@ export default function Footer() {
         </div>
 
         <div className={s.socials}>
-          <p>Socials</p>
-          <p>Icons</p>
+          <p className={s.socialsText}>Socials</p>
+          <RiInstagramFill className={s.socialsInstaIcon}/>
+          <IoLogoWhatsapp className={s.socialsWhatsappIcon}/>
         </div>
 
         <div className={s.address}>
