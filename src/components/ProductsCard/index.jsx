@@ -19,19 +19,25 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
 
   const discontProcent = Math.round(100 - ((discont_price / price) * 100));
 
+  
+
+
   return (
     <div  className={s.card}>
       <img src={`http://localhost:3333${image}`} alt={title} />
       <div>
         <p>{ title }</p>
         <p>{tempPrice()}</p>
-        <span className={s.discont}>{discontProcent}%</span>
+        <p>
+       
+        </p>
       </div>
     </div>
 
   )
 }
 
+{/* <p className={s.discont}>{discontProcent}%</p> */}
 
 {/* <span>{discont}$ </span>
 <span className={s.price}>{price}$</span> */}

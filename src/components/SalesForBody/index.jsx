@@ -40,9 +40,9 @@ console.log(randomItems);
         <span>
           <h2>Sale</h2>
         </span>
-            <span>
+            <div className={s.class_div}>
             <Link to='/sales'>All sales</Link>
-            </span>
+            </div>
       </div>
       <ProductsContainer products = {randomItems}/>
     </div>
