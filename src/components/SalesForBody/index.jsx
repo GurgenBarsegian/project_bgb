@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ProductsContainer from '../ProductsContainer';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../../requests/products';
+import { getProducts } from '../../requests/getProducts';
 import s from './index.module.css';
 import b from './index.module.css';
 import { Link } from 'react-router-dom';

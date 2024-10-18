@@ -1,17 +1,25 @@
 .form {
-  border: 1px solid black;
-  width: auto;
+  max-width: 1440px;
   border-radius: 12px;
   height: 450px;
-  
   background: linear-gradient(80.46deg, #87933d -0.68%, #55610b 66.66%);
-
-  top: 1416px;
-  left: 40px;
+margin-top: 316px;
+margin-bottom: 10px;
+  margin-left: 40px;
   padding: 32px 32px 0px 32px;
   gap: 24px;
   opacity: 0px;
   
+}
+
+.form_container img {
+  width: 748px;
+  height: 340px;
+  object-fit: cover;
+}
+.form_container {
+  display: flex;
+  flex-direction: row;
 }
 
 .form > h2 {
@@ -23,21 +31,17 @@
   color: #ffffff;
 }
 
-.form > form {
-
+.form_container > form {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items:end;
-  /* background-image: url(https://s3-alpha-sig.figma.com/img/a3b6/9a2d/df1657885446d076034889d1f0f9f714?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gJ6JSn6ZwNG7Rd~QQ8FO2vDDIOB4dyKVRX2t~niCsDrPdOeueGa7PWL4nLCBNHbgVJUwNpZfAr0e7FMJqy7dGpmREl6uUCedpDi7C~wyRnTiDdD1R24fPQVZYCA6dKMbMxs6frsgvUTTAeWooYfaysCsK672t9S1AOp1DDMHD-tQY4f0iVf7ACkrYCxnTcjZ0Xu6laJVzIBbu95RJIz3ImTp1qObM808vnCAo2CVs9HhV~6Iq9YOyU2LtNyuqZw-BfCNCQcq8EOuGqHRmopN3N2K3QVqLJWzTrJMgabQxiY6yXca~AzFGIgx~pdzDup4bti2SjhDLzWBroJnUfcl0A__); */
-background-size: 40%;
-background-position: 0%;
-margin-top: 80px;
-gap:15px
+  align-items: end;
+  margin-bottom: 60px;
+  gap: 15px;
+  margin-left: 30px;
 }
 
-
-.form > form > input {
+.form > div > form > input {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid white;
   border-radius: 6px;
@@ -46,26 +50,25 @@ gap:15px
   height: 30px;
   padding: 16px 32px 16px 32px;
   cursor: pointer;
-
 }
 
-.form > form > button {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 6px;
-    color: black;
-    line-height:0.2;
-    width: 380px;
-    height: 30px;
-    padding: 16px 32px 16px 32px;
-    font-size: 18px;
-    cursor: pointer;
-  }
+.form_container > form > button {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: black;
+  line-height: 0.2;
+  width: 380px;
+  height: 30px;
+  padding: 16px 32px 16px 32px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-  .form > form > button:hover {
-    background-color: antiquewhite;
-  }
-  .form > form > input::placeholder {
+.form_container > form > button:hover {
+  background-color: antiquewhite;
+}
+.form_container form > input::placeholder {
   color: white;
   opacity: 0.7;
 }

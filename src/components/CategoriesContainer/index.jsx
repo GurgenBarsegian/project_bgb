@@ -4,7 +4,8 @@ import s from './index.module.css'
 
 export default function CategoriesContainer({categories}) {
 
-  const categoriesForMain = categories.slice(0, 4);
+  const categoriesForMain = [...categories].slice(0, 4);
+  
   return (
 
     <div className={s.categories_container}>
