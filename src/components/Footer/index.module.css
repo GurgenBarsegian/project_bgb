@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*{
     font-family: Montserrat;
-
 }
 
 .footer {
@@ -19,18 +19,16 @@
 
 .cardsWrapper {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 780px 548px;
     grid-column-gap: 32px;
     grid-row-gap: 32px;
-    margin-top: 32px;
+    margin-top: 40px;
     margin-bottom: 32px;
 }
 
 .phone {
-    width: 780px;
     height: 150px;
     padding: 32px;
-    gap: 16px;
     background: #F2F6D3;
     border-radius: 10px;
 
@@ -47,31 +45,36 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
+    margin-top: 16px;
+    color: #424436;
 }
 
 .socials {
-    width: 548px;
     height: 150px;
     padding: 32px;
-    gap: 16px;
     background: #F2F6D3;
     border-radius: 10px;
 
 }
 
-.socials :first-child {
+.socialsText {
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
     color: #8B8B8B;
 }
 
+.socials svg {
+    color: black;
+    width: 43px;
+    height: 44px;
+    margin-top: 16px;
+    color: #424436;
+}
 
 .address {
-    width: 780px;
-    height: 150px;
+    height: 194px;
     padding: 32px;
-    gap: 16px;
     background: #F2F6D3;
     border-radius: 10px;
 }
@@ -87,13 +90,13 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
+    margin-top: 16px;
+    color: #424436;
 }
 
 .hours {
-    width: 548px;
-    height: 150px;
+    height: 194px;
     padding: 32px;
-    gap: 16px;
     border-radius: 10px;
     background-color: #f2f6d3;
 }
@@ -104,18 +107,19 @@
     line-height: 26px;
     color: #8B8B8B;
 }
-.hours :last-child{
+
+.hours :last-child {
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
     color: #424436;
     margin-top: 16px;
-    
+
 }
 
 
 .map {
-    width: 1440px;
+    width: 1360px;
     height: 350px;
     max-width: 100%;
     border: none;

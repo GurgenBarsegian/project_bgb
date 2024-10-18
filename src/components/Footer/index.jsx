@@ -1,7 +1,7 @@
-import React from 'react';
-import s from './index.module.css';
-import { IoLogoWhatsapp } from "react-icons/io";
+import React from 'react'
 import { RiInstagramFill } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io";
+import s from './index.module.css'
 
 export default function Footer() {
   return (
@@ -17,11 +17,9 @@ export default function Footer() {
         </div>
 
         <div className={s.socials}>
-          <p>Socials</p>
-
-          <div><a href="https://www.instagram.com" target="_blank" class="link1"><RiInstagramFill /></a></div>
-          <div><a href="https://web.whatsapp.com" target="_blank" class="link1"><IoLogoWhatsapp /></a></div>
-
+          <p className={s.socialsText}>Socials</p>
+          <RiInstagramFill className={s.socialsInstaIcon}/>
+          <IoLogoWhatsapp className={s.socialsWhatsappIcon}/>
         </div>
 
         <div className={s.address}>
