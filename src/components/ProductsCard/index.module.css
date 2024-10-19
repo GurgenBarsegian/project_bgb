@@ -44,3 +44,6 @@
     background-color: orangered;
     color: white;
 }
+.line{
+    text-decoration: line-through;
+}
