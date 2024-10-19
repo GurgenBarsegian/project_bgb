@@ -1,45 +1,37 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import s from './index.module.css';
-
+ 
 export default function ProductsCard({ id, image, title, price, discont_price}) {
 
- 
-  // const discont = discont_price === null ? `${price} `: `${price} ${discont_price}`;
-
+  const discontProcent = Math.round(100 - ((discont_price / price) * 100));
   const tempPrice =() =>{
 
     if(discont_price === null){
-      return `${price}$`
+      return <p>{price}$</p>
     } else {
-      return `${discont_price}$ ${price}$`
+      return <p>{discont_price}$ <span className={s.line}>{price}$</span> <span className={s.discont}>{discontProcent}%</span></p>
     }
   
   }
 
-  const discontProcent = Math.round(100 - ((discont_price / price) * 100));
-
   
-
-
   return (
     <div  className={s.card}>
       <img src={`http://localhost:3333${image}`} alt={title} />
       <div>
         <p>{ title }</p>
         <p>{tempPrice()}</p>
-        <p>
        
-        </p>
       </div>
     </div>
 
   )
 }
 
-{/* <p className={s.discont}>{discontProcent}%</p> */}
+// {/* <p className={s.discont}>{discontProcent}%</p> */}
 
-{/* <span>{discont}$ </span>
-<span className={s.price}>{price}$</span> */}
+// {/* <span>{discont}$ </span>
+// <span className={s.price}>{price}$</span> */}
 
 
+//  `${discont_price}$ ${price.style.textDecoration = 'line-through'}$`
