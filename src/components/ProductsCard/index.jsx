@@ -4,6 +4,7 @@ import s from './index.module.css';
 export default function ProductsCard({ id, image, title, price, discont_price}) {
 
   const discontProcent = Math.round(100 - ((discont_price / price) * 100));
+
   const tempPrice =() =>{
 
     if(discont_price === null){
@@ -21,17 +22,8 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
       <div>
         <p>{ title }</p>
         <p>{tempPrice()}</p>
-       
       </div>
     </div>
 
   )
 }
-
-// {/* <p className={s.discont}>{discontProcent}%</p> */}
-
-// {/* <span>{discont}$ </span>
-// <span className={s.price}>{price}$</span> */}
-
-
-//  `${discont_price}$ ${price.style.textDecoration = 'line-through'}$`
