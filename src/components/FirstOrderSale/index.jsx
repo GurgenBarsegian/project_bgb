@@ -2,7 +2,7 @@ import React from 'react'
 import s from './index.module.css'
 import { useDispatch } from 'react-redux';
 import { addNewClientAction } from '../../store/reducers/newClientsReducer';
-import { useForm } from 'react-hook-form';
+
 
 
 export default function FirstOrderSale() {
