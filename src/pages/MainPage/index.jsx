@@ -1,6 +1,9 @@
 import React from 'react'
 import s from './index.module.css'
 import { Link } from 'react-router-dom'
+import CategoriesPageForMain from '../CategoriesPageForMain';
+import FirstOrderSale from '../../components/FirstOrderSale';
+import SalesForBody from '../../components/SalesForBody';
 
 export default function MainPage() {
   return (
@@ -13,6 +16,10 @@ export default function MainPage() {
       </div>
         <Link to='/sales'>Check out</Link>
        </div>
+        <CategoriesPageForMain/>
+        <FirstOrderSale/>
+        <SalesForBody />
+
     </div>
   )
 }
