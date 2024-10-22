@@ -1,11 +1,12 @@
 import React from 'react'
-import ProductCardForPage from '../ProductCardForPage'
+import ProductsCard from '../ProductsCard'
 
-export default function ProductsContainerForPage({oneCategory}) {
+export default function ProductsContainerForPage({products}) {
+
   return (
     <div>
-        { oneCategory.map(el => <ProductCardForPage key={el.id} />)
-}
+ {products.products.map(el => <ProductsCard key={el.id}  {...el}/> )} 
+
     </div>
   )
 }
