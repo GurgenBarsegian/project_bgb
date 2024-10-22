@@ -2,7 +2,7 @@ import React from 'react';
 import s from './index.module.css';
 import ProductsCard from '../ProductsCard';
 
-export default function ProductsContainer({products}) {
+export default function ProductsContainer({products, oneCategory}) {
   return (
     <div className={s.container}>
         {

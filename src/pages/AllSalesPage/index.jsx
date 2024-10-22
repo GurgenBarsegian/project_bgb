@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../../requests/products';
+import { getProducts } from '../../requests/getProducts';
 import ProductsContainer from '../../components/ProductsContainer';
 import ChangeStateProducts from '../../components/ChangeStateProducts';
 

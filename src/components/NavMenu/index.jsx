@@ -7,7 +7,7 @@ export default function NavMenu() {
     <nav className={s.menu}>
     <Link to='/'>Main Page</Link>
     <Link to='/categories'>Categories</Link>
-    <Link to='/products/all'>All products</Link>
+    <Link to='/all_products'>All products</Link>
     <Link to='/sales'>All sales</Link>
 </nav>
   )

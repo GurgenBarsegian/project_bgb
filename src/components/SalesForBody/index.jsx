@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import ProductsContainer from '../ProductsContainer';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../../requests/products';
-import s from './index.module.css'
+import { getProducts } from '../../requests/getProducts';
+import s from './index.module.css';
+import b from './index.module.css';
+import { Link } from 'react-router-dom';
 
 
 export default function SalesForBody() {
+
 
     const allProductsState = useSelector(store => store.products);
     
@@ -30,10 +33,18 @@ export default function SalesForBody() {
 
 console.log(randomItems);
 
+    
   return (
     <div className={s.body_sales}>
-        <h2>Sales</h2>
-        <ProductsContainer products = {randomItems}/>
+      <div>
+        <span>
+          <h2>Sale</h2>
+        </span>
+            <div className={s.class_div}>
+            <Link to='/sales'>All sales</Link>
+            </div>
+      </div>
+      <ProductsContainer products = {randomItems}/>
     </div>
   )
 }

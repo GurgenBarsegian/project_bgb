@@ -1,27 +1,38 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import s from './index.module.css';
-
+import { addProductToCartAction } from '../../store/reducers/cartReducer';
+import { useDispatch } from 'react-redux';
+ 
 export default function ProductsCard({ id, image, title, price, discont_price}) {
 
+  const dispatch = useDispatch();
 
+  const discontProcent = Math.round(100 - ((discont_price / price) * 100));
+
+  const tempPrice =() =>{
+
+    if(discont_price === null){
+      return {price}} else {  
+      return <p>${discont_price} <span className={s.line}>${price}</span> <span className={s.discont}>-{discontProcent}%</span></p>
+    }
+  
+  }
+
+  
   return (
     <div  className={s.card}>
-      <img src={image} alt={title} />
+      <img src={`http://localhost:3333${image}`} alt={title} />
+      
       <div>
         <p>{ title }</p>
-        <p>{ price }$</p>
+        <p>{tempPrice()}</p>
+         <div onClick={() => dispatch(addProductToCartAction({ id, image, title, price }))} className={s.cart}>
+        Add to cart 
       </div>
-      <div>
-          { 
-            discont_price === null
-            ? ''
-            : `Discont: ${discont_price}`
-          }
       </div>
+      
+      
+      
     </div>
-
   )
 }
-
-

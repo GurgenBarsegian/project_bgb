@@ -1,12 +1,38 @@
 .body_sales{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 50vh;
-    margin: 50px 50px 20px 10px;
-    left: 40px;
-    padding: 32px 32px 0px 32px;
-    gap: 24px;
-    border-radius: 2%;
-    
+    margin: 30px;
+    border-top: 1px solid gray;
+    position: relative;
 }
+.body_sales img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.body_sales h2:nth-of-type(1){
+    position: absolute;
+    top: -26px;
+    left: 0px;
+    background-color: white;
+    padding: 0px, 100px;
+    border-radius: 10px;
+    border: 10px solid white;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+}
+
+.class_div :Link {
+    text-decoration: none;
+    position: absolute;
+    top: -12px;
+    right: 0px;
+    background-color: white;
+    padding: 0px, 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100px;
+    color: grey;
+    text-align: center;
+}
+
