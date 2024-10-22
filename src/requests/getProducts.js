@@ -1,17 +1,4 @@
-// export const getAllProducts = (dispatch) => {
-//     fetch('https://fakestoreapi.com/products')
-//     .then(res => res.json())
-//     .then(json => dispatch(loadAllProductsAction(json)))
-// }
-
-// export const getProductsByCategories = (category_name) => {
-//     return dispatch => {
-//         fetch(`https://fakestoreapi.com/products/category/${category_name}`)
-//         .then(res=> res.json())
-//         .then(json => dispatch(loadProductsByCategoryAction(json)))
-//     }
-   
-// }
+import { loadProductsByCategoryAction } from "../store/reducers/productsByCategoryReducer";
 import { loadAllProductsAction } from "../store/reducers/productsReducer";
 
 export const getProducts = (dispatch) => {
@@ -20,11 +7,12 @@ export const getProducts = (dispatch) => {
     .then(json => dispatch(loadAllProductsAction(json)))
 };
 
-export const getProductsByCategories = ({categoryId}) => {
+export const getProductsByCategories = (category_id) => {
 
     return dispatch => {
-        fetch(`http://localhost:3333/categories/${categoryId}`)
+        fetch(`http://localhost:3333/categories/${category_id}`)
         .then(res=> res.json())
-        .then(json => console.log(json))
+        // .then(json => console.log(json))
+        .then(json => dispatch(loadProductsByCategoryAction(json)))
     }
 }

@@ -8,6 +8,7 @@ import AllSalesPage from './pages/AllSalesPage';
 import CartPage from './pages/CartPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CategoriesPage from './pages/CategoriesPage';
+import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
 
 
 
@@ -23,6 +24,8 @@ function App() {
         <Route path='/sales' element={<AllSalesPage/>}/>
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
+        <Route path='/categories/:id' element={<ProductsByCategoriesPage/>}/>
+       
   </Routes>
   <Footer/>
     </div>
