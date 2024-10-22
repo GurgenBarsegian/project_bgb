@@ -4,6 +4,7 @@ import ProductsCard from '../ProductsCard';
 
 export default function ProductsContainer({products, oneCategory}) {
   return (
+    
     <div className={s.container}>
         {
             products.map(el => <ProductsCard key={el.id} {...el} />)
