@@ -1,9 +1,6 @@
-
 import React from 'react'
 import s from './index.module.css'
-
-import { Link } from 'react-router-dom';
-
+import { Link } from 'react-router-dom'
 import CategoriesPageForMain from '../CategoriesPageForMain';
 import FirstOrderSale from '../../components/FirstOrderSale';
 import SalesForBody from '../../components/SalesForBody';
