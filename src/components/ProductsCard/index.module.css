@@ -35,3 +35,15 @@
 .price{
     text-decoration: line-through;
 }
+.discont{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+}
+.line{
+    text-decoration: line-through;
+}
