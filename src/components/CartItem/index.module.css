@@ -1,8 +1,16 @@
 .card{
-    border: 1px solid black;
-    width: 300px;
+    border: 1px solid #DDDDDD;
+    width: 780px;
+    height: 180px;
+    
 }
 .card > img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 180px;
+    border-radius: 1px solid #DDDDDD;
+}
+
+.card > div{
+    width: 548px;
+    height: 180px;
 }

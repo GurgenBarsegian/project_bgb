@@ -37,6 +37,7 @@ export default function CartPage() {
                   <input type="text" placeholder="Name" name="name" className="input" />
                   <input type="" placeholder="Phone number" name="phone_number" />
                   <input type="text" placeholder="Email" name="email" />
+                  <button>Order</button>
                 </form>
               </div>
           </div>
