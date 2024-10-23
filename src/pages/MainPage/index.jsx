@@ -14,8 +14,8 @@ export default function MainPage() {
       <div className={s.Main}>
            <p >Amazing Discounts</p>
            <p>on Garden Products!</p>
+           <Link to='/sales'>Check out</Link>
       </div>
-        <Link to='/sales'>Check out</Link>
        </div>
 
         <CategoriesPageForMain/>
