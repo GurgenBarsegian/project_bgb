@@ -12,7 +12,8 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
   const tempPrice =() =>{
 
     if(discont_price === null){
-      return {price}} else {  
+      return <p>${price}</p>
+    } else {  
       return <p>${discont_price} <span className={s.line}>${price}</span> <span className={s.discont}>-{discontProcent}%</span></p>
     }
   
@@ -26,7 +27,7 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
       <div>
         <p>{ title }</p>
         <p>{tempPrice()}</p>
-         <div onClick={() => dispatch(addProductToCartAction({ id, image, title, price }))} className={s.cart}>
+         <div onClick={() => dispatch(addProductToCartAction({ id, image, title,discont_price, price, count: 1 }))} className={s.cart}>
         Add to cart 
       </div>
       </div>

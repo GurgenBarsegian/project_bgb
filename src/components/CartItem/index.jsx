@@ -23,20 +23,22 @@ export default function CartItem({id, image, title, discont_price, price, count}
   return (
     <div className={s.card}>
         <img src={`http://localhost:3333${image}`} alt={title} />
-        <p>{ title }</p>
-        
-        <p>{tempPrice()}</p>
         <div>
-            <div onClick={() => dispatch(decrementCountAction(id))}>
-              -
-            </div>
-            <p>{ count }</p>
-            <div onClick={() => dispatch(incrementCountAction(id))}>
-              +
-            </div>
+          <p>{ title }</p>
+          
+          <p>{tempPrice()}</p>
+          <div>
+              <div onClick={() => dispatch(decrementCountAction(id))}>
+                -
+              </div>
+              <p>{ count }</p>
+              <div onClick={() => dispatch(incrementCountAction(id))}>
+                +
+              </div>
+          </div>
+          
+          <RxCross2 onClick={() => dispatch(deleteProductFromCartAction(id))} />
         </div>
-        
-        <RxCross2 onClick={() => dispatch(deleteProductFromCartAction(id))} />
     </div>
   )
 }
