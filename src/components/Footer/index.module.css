@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 *{
     font-family: Montserrat;
 }
 
 .footer {
-    max-width: 1, 440px;
-    max-height: 948px;
-    top: 2594px;
     padding: 0px 40px 80px 40px;
+    width: 1440px;
+    height: 948px;
+    top: 2594px;
     gap: 40px;
 
 }
