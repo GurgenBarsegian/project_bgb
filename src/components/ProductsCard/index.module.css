@@ -96,4 +96,8 @@
 } 
 .card:hover div > div{
      display: block;
+    
+}
+.cart:hover {
+    background-color: rgb(69, 69, 69);
 }

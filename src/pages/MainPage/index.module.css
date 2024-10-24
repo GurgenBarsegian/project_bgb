@@ -1,5 +1,6 @@
 .main {
-    width: 100%;
+    max-width: 1440px;
+    margin: auto;
     height: 600px;
     overflow: hidden;   
     position: relative;
@@ -8,10 +9,10 @@
 }
 
 .main img {
-    width: 100%;
-    height: auto;
+    width: 1440px;
+    height: 900px;
     padding: 0;
-    margin: 0;
+    margin: auto;
     filter: brightness(70%);
     
 }
@@ -22,27 +23,27 @@
 }
 
 .Main {
-    width: auto;
+    width: 100%;
     height: auto;
+    margin: auto;
    position: absolute;
    top: 50px;
    left: 40px;
    color: white;
    font-weight: 700;
    font-size: 85px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: "Montserrat", sans-serif;
 }
 
-.main > a {
+.Main > a {
     display: flex;
     position: absolute;
-    top: 320px;
-    left: 40px;
     border: 1px solid #92A134;
     background-color: #92A134;
     color: white;
     width: 218px;
     height: 58px;
+    margin: auto;
     text-decoration: 0;
     border-radius: 5px;
     justify-content: center;
@@ -50,6 +51,6 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
