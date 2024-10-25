@@ -11,3 +11,15 @@
     height: 45px;
     width: 45px
 }
+
+
+
+.header > a span {
+    background-color: rgb(53, 80, 52);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+} 
