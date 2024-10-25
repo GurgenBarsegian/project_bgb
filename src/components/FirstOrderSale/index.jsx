@@ -1,6 +1,7 @@
-import React from "react";
-import s from "./index.module.css";
-import { addNewCustomer } from "../../requests/post";
+import React from 'react'
+import s from './index.module.css'
+import { addNewCustomer } from '../../requests/post';
+
 
 
 export default function FirstOrderSale() {

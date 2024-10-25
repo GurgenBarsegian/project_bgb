@@ -1,10 +1,12 @@
 .categories_container{
-    width: auto;
+    max-width: 1360px;
     height: 200px;
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(4, 3fr);
-    gap: 20px;
-    margin-left: 40px;
+    gap: 30px;
+    
+    margin: auto;
+    
  
   /* width: 1360px;
   height: 418px;
@@ -13,3 +15,6 @@ margin-left: 40px;
 opacity: 0px; */
 
 }
+
+
+

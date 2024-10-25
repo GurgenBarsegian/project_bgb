@@ -1,6 +1,10 @@
 .body_sales{
-    margin: 30px;
+    max-width: 1360px;
+    margin: auto;
+    display: grid; 
+    grid-template-columns: repeat(4, 3fr);
     border-top: 1px solid gray;
+    gap: 30px;
     position: relative;
 }
 .body_sales img {
