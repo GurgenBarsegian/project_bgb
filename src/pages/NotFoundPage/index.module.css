@@ -1,0 +1,19 @@
+.notFoundPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.notFoundPage > div > span {
+    width: 179.4px;
+height: 245.88px;
+gap: 0px;
+opacity: 0px;
+color:  #92A134;
+
+}
+.notFoundPage > div > img {
+width: auto;
+    height: 50px;
+}
