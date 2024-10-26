@@ -16,8 +16,7 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
     } else {  
       return <p>${discont_price} <span className={s.line}>${price}</span> <span className={s.discont}>-{discontProcent}%</span></p>
     }
-  
-  }
+    }
 
   
   return (
