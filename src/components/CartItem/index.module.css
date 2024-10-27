@@ -53,7 +53,7 @@
   
   .quantity_controls {
     display: flex;
-    
+    flex-flow: row;
     
     gap: 20px;
   }
@@ -68,6 +68,8 @@
     border-radius: 6px;
     width: 58px;
     height: 58px;
+    flex-flow: row;
+
   }
   
   .count {
@@ -81,6 +83,8 @@
     border-top: 1px solid #ddd;
     width: 96px;
     height: 58px;
+    flex-flow: row;
+
   }
   
   .remove_icon {

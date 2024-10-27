@@ -20,7 +20,7 @@ export default function FirstOrderSale() {
       email: email.value,
     };
     
-console.log(newCustomer)
+    console.log(newCustomer)
     addNewCustomer(newCustomer);
 
     e.target.reset();
