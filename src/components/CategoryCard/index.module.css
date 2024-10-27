@@ -8,6 +8,7 @@
   justify-content: space-around;
   gap: 16px;
   opacity: 0px;
+
 }
 
 .category_card img {
@@ -19,4 +20,8 @@
 
 .category_card p {
   align-self: center;
+}
+
+.span {
+  display: flex;
 }

@@ -17,16 +17,14 @@ export default function SalesForBody() {
     
     const salesProducts = allProductsState.filter(el => el.discont_price !== null);
    
-    // Функция для случайного перемешивания массива (алгоритм Фишера-Йетса)
     function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]]; // Меняем местами элементы
+        [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     return arr;
     }
 
-    // Перемешиваем массив и берем первые 4 элемента
     const randomItems = shuffleArray(salesProducts).slice(0, 4);
 
 

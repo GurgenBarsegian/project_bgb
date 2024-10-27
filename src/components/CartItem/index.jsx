@@ -15,30 +15,40 @@ export default function CartItem({id, image, title, discont_price, price, count}
     if(discont_price === null){
       return <p>{price}$</p>
     } else {
-      return <p>{discont_price}$ <span>{price}$</span> <span>{discontProcent}%</span></p>
+      return <p>{discont_price}$ <span className={s.old_price}>{price}$</span></p>
     }
   
   }
 
   return (
     <div className={s.card}>
-        <img src={`http://localhost:3333${image}`} alt={title} />
-        <div>
-          <p>{ title }</p>
+      <img src={`http://localhost:3333${image}`} alt={title} className={s.image} />
+      <div className={s.details}>
+        <p className={s.title}>{ title }</p>
+        <div className={s.quantity_controls}>
+          <button 
+            className={s.decrement} 
+            onClick={() => dispatch(decrementCountAction(id))}
+          >
+            -
+          </button>
           
-          <p>{tempPrice()}</p>
-          <div>
-              <div onClick={() => dispatch(decrementCountAction(id))}>
-                -
-              </div>
-              <p>{ count }</p>
-              <div onClick={() => dispatch(incrementCountAction(id))}>
-                +
-              </div>
-          </div>
+          <p className={s.count}>{ count }</p>
           
-          <RxCross2 onClick={() => dispatch(deleteProductFromCartAction(id))} />
-        </div>
+          <button 
+            className={s.increment} 
+            onClick={() => dispatch(incrementCountAction(id))}
+          >
+            +
+          </button>
+          <p className={s.price}>{tempPrice()}</p>
     </div>
+    
+    <RxCross2 
+      className={s.remove_icon} 
+      onClick={() => dispatch(deleteProductFromCartAction(id))} 
+    />
+  </div>
+</div>
   )
 }

@@ -1,8 +1,12 @@
 .body_sales{
     max-width: 1360px;
     margin: auto;
+    margin-top: 60px;
     display: grid; 
     grid-template-columns: repeat(4, 3fr);
+
+    border-top: 1px solid #424436;
+
     gap: 30px;
     position: relative;
     
@@ -23,15 +27,19 @@
 
 .body_sales h2:nth-of-type(1){
     position: absolute;
-    top: -26px;
+    top: -56px;
     left: 0px;
     font-size: 64px;
     background-color: white;
     padding: 0px, 100px;
     border-radius: 10px;
     border: 10px solid white;
-    color: rgb(87, 87, 87);
+
+    color: #424436;
+
     font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .class_div > a {
@@ -42,11 +50,18 @@
     background-color: white;
     padding: 0px, 100px;
     border-radius: 5px;
+
     border: 1px solid rgb(208, 208, 208);
     font-family: "Montserrat", sans-serif;
     color: rgb(143, 143, 143);
     font-size: 16px;
     margin-top: 30px;
+
+    border: 1px solid #424436;
+    width: 100px;
+    color: #424436;
+    text-align: center;
+
 }
 
 

@@ -13,7 +13,7 @@
   .category_card img {
     width: 316px;
     height: 392px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 20px;
   }
   
