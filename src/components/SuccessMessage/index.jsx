@@ -12,11 +12,11 @@ export default function SuccessMessage({ onClose }) {
         <div>
             <p>Your....</p>
         </div>
+        
+      </div>
         <Link to='/'>
             <IoMdClose />
         </Link>
-        
-      </div>
     </div>
   );
 }

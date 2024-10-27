@@ -1,6 +1,7 @@
+
 .cart1{
     width: 1360px;
-    height: 692px;
+    height: auto;
     margin: auto;
     display: flex;
     justify-content: space-between; /* Для распределения блоков по ширине */

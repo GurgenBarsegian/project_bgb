@@ -18,7 +18,7 @@ export default function Header() {
         {
           cartState.length === 0
           ? ''
-          : <span>{ totalCount }</span>
+          : <span className={s.number}>{ totalCount }</span>
         }
         </Link>
     </div>
