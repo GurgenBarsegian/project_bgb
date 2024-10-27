@@ -1,7 +1,8 @@
 .form {
+  position: relative;
   max-width: 1360px;
   border-radius: 12px;
-  height: 450px;
+  height: auto;
   background: linear-gradient(80.46deg, #87933d -0.68%, #55610b 66.66%);
   margin: auto;
   margin-top: 316px;
@@ -13,11 +14,15 @@
 }
 
 .form_container img {
+  max-width: 1360px;
+  margin: auto;
   width: 748px;
   height: 340px;
   object-fit: cover;
+  
 }
 .form_container {
+  
   display: flex;
   flex-direction: row;
 }
@@ -32,6 +37,7 @@
 }
 
 .form_container > form {
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -42,22 +48,26 @@
 }
 
 .form > div > form > input {
+  
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid white;
   border-radius: 6px;
   margin-bottom: 15px;
+  font-weight: 500;
   width: 380px;
   height: 30px;
   padding: 16px 32px 16px 32px;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form_container > form > button {
   background-color: white;
   border: 1px solid white;
   border-radius: 6px;
-  color: black;
+  color: rgb(66, 66, 66);
   line-height: 0.2;
+  font-weight: 600;
   width: 380px;
   height: 30px;
   padding: 16px 32px 16px 32px;

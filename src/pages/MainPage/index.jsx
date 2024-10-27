@@ -17,10 +17,16 @@ export default function MainPage() {
            <Link to='/sales' >Check out</Link>
       </div>
        </div >
-      <div>
+       <div className={s.category}>
+        <h2>Categories</h2>
+        <Link to='/categories'>All categories</Link>
+       </div>
+      <div >
         <CategoriesPageForMain/>
         <FirstOrderSale/>
+        <div className={s.sale_main}> 
         <SalesForBody />
+        </div>
       </div>
     </div>
   )
