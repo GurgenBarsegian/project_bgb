@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './index.module.css';
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 
 export default function SuccessMessage({ onClose }) {
@@ -11,7 +12,10 @@ export default function SuccessMessage({ onClose }) {
         <div>
             <p>Your....</p>
         </div>
-        <IoMdClose />
+        <Link to='/'>
+            <IoMdClose />
+        </Link>
+        
       </div>
     </div>
   );

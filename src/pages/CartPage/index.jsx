@@ -117,14 +117,14 @@ export default function CartPage() {
 
     console.log(newCustomer);
     sendOrder(newCustomer);
-    setIsSuccessful(true); // Показываем сообщение об успехе
+    setIsSuccessful(true); 
     e.target.reset();
   };
 
   const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
   const totalSum = +cartState.reduce((acc, el) => acc + (el.price * el.count), 0).toFixed(2);
 
-  // Функция для закрытия сообщения
+
   const closeSuccessMessage = () => {
     setIsSuccessful(false);
   };
@@ -182,7 +182,7 @@ export default function CartPage() {
           )
       }
 
-      {/* Отображаем сообщение об успехе */}
+
       {isSuccessful && <SuccessMessage onClose={closeSuccessMessage} />}
     </div>
   );
