@@ -5,12 +5,13 @@
 }
 
 .footer {
+    /* position: fixed; */
     padding: 0px 40px 80px 40px;
-    width: 1440px;
+    max-width: 1440px;
+    margin: auto;
     height: 948px;
     top: 2594px;
     gap: 40px;
-
 }
 
 .contactText {
