@@ -55,9 +55,14 @@
   .quantity_controls {
     display: flex;
     flex-flow: row;
+
+        gap: 20px;
+        
+
     margin-top: -30px;
     
     /* gap: 20px; */
+
   }
   
   .decrement, .increment {
