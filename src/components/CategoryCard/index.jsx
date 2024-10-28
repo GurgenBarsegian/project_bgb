@@ -9,10 +9,8 @@ export default function CategoryCard({title, image}) {
     <div className={s.category_card}>
      <div>
     <span className={s.span}>
-      <h2>Categories</h2>
     </span>
         <div className={s.class_div}>
-        <Link to='/categories'>All categories</Link>
         </div>
         </div> 
 

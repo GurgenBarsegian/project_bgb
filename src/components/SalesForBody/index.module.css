@@ -4,17 +4,17 @@
     margin-top: 60px;
     display: grid; 
     grid-template-columns: repeat(4, 3fr);
-
-    border-top: 1px solid #424436;
-
+    border-top: 1px solid rgb(207, 207, 207);
     gap: 30px;
     position: relative;
-    
+    justify-content: center;
+    left: 15px;
+    margin-bottom: 25px;
 }
 
 .body_sales div {
     margin-top: 33px;
-    border-top: 1px solid rgb(207, 207, 207);
+    
 }
 
 
@@ -45,21 +45,17 @@
 .class_div > a {
     text-decoration: none;
     position: absolute;
-    top: -9px;
+    top: -40px;
     right: 0px;
     background-color: white;
     padding: 0px, 100px;
     border-radius: 5px;
-
     border: 1px solid rgb(208, 208, 208);
     font-family: "Montserrat", sans-serif;
-    color: rgb(143, 143, 143);
     font-size: 16px;
     margin-top: 30px;
-
-    border: 1px solid #424436;
     width: 100px;
-    color: #424436;
+    color: rgb(143, 143, 143);
     text-align: center;
 
 }
