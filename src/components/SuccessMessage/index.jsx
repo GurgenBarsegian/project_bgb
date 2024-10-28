@@ -10,13 +10,13 @@ export default function SuccessMessage({ onClose }) {
       <div className={s.successMessage}>
         <h2>Congratulations!</h2>
         <div>
-            <p>Your....</p>
+            <p>Your order has been successfully placed on the website.</p>
+            <p>A manager will contact you shortly to cinfirm your order.</p>
         </div>
-        
-      </div>
         <Link to='/'>
             <IoMdClose />
         </Link>
+      </div>
     </div>
   );
 }
