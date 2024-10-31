@@ -1,4 +1,14 @@
 .change{
+    max-width: 1360px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #424436;
+    align-items: center;
 }

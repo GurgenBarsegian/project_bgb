@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { getCategories } from '../../requests/categories';
 import { useSelector } from 'react-redux';
 import CategoriesContainerForPage from '../../components/CategoriesContainerForPage';
-
+import s from './index.module.css'
 
 
 export default function CategoriesPage() {
@@ -15,7 +15,7 @@ export default function CategoriesPage() {
   useEffect(()=> dispatch(getCategories), []);
 
   return (
-    <div>
+    <div className={s.category}>
 <CategoriesContainerForPage categories={categoriesState} />
     </div>
   )
