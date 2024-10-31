@@ -5,12 +5,9 @@
 }
 
 .footer {
-    max-width: 1, 440px;
     max-height: 948px;
-    top: 2594px;
     padding: 0px 40px 80px 40px;
-    gap: 40px;
-
+    display: grid;
 }
 
 .contactText {

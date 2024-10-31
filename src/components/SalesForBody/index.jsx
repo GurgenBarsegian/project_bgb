@@ -3,7 +3,6 @@ import ProductsContainer from '../ProductsContainer';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../requests/products';
 import s from './index.module.css';
-import b from './index.module.css';
 import { Link } from 'react-router-dom';
 
 
@@ -31,7 +30,7 @@ export default function SalesForBody() {
     const randomItems = shuffleArray(salesProducts).slice(0, 4);
 
 
-console.log(randomItems);
+//console.log(randomItems);
 
     
   return (
