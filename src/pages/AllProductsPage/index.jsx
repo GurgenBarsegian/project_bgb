@@ -3,20 +3,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../requests/getProducts';
 import ProductsContainer from '../../components/ProductsContainer';
 import ChangeStateProducts from '../../components/ChangeStateProducts';
+import s from './index.module.css'
 
 export default function AllProductsPage() {
 
-  const allProductsState = useSelector(store => store.products);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => dispatch(getProducts), []);
-
   return (
-    <div>
-      <h3>All products:</h3>
-      <ChangeStateProducts />
-      <ProductsContainer products={allProductsState} />
+    <div >
+      <h3 className={s.products}>All products:</h3>
+      <div><ChangeStateProducts /></div>
+      
     </div>
   )
 }
