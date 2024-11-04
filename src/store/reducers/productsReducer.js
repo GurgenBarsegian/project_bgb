@@ -13,9 +13,10 @@ export const sortProductsAction = value => ({
     type: SORT_PRODUCTS, payload: value
 })
 
-export const filterProductAction = value => ({
-    type: FILTER_PRODUCT, payload: value
+export const filterProductAction = values => ({
+    type: FILTER_PRODUCT, payload: values
 })
+
 
 export const productsReducer = (state=[], action) => {
 
@@ -28,7 +29,7 @@ export const productsReducer = (state=[], action) => {
     } else if (action.type === GET_DISCOUNTED_ITEMS) {
         if (action.payload) {
             state.map(el => {
-                if(el === ){
+                if(!el.discont_price){
                     el.visible = false
                 }
                 return el
@@ -45,6 +46,16 @@ export const productsReducer = (state=[], action) => {
             el.visible = el.price >= min && el.price <= max ? true : false;
             return el
         })
+        return [...state]
+    } else if (action.type === SORT_PRODUCTS){
+        if(action.payload === 'upside'){
+            state.sort((a, b) => a.price - b.price)
+        } else if (action.payload === 'downside'){
+            state.sort((a, b) => b.price - a.price)
+        } else if (action.payload === 'in alphabetic order'){
+            state.sort((a, b) => a.title.localeCompare(b.title))
+        }
+        return [...state]
     }
 
     return state
