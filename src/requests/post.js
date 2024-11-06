@@ -19,5 +19,5 @@ export const sendOrder = (new_order) => {
         body: JSON.stringify(new_order)
     })
     .then(res=> res.json())
-    .then(json => json)
+    .then(json => console.log(json))
 }
