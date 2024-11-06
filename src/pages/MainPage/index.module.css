@@ -61,7 +61,7 @@
     top: -9px;
     max-width: 1440px;
     margin: auto;
-    background-color: white;
+    background-color:  #FFFFF1;
     border-radius: 5px;
     border: 1px solid rgb(208, 208, 208);
     color: rgb(144, 144, 144);
@@ -86,10 +86,12 @@
     font-size: 64px;
     margin: auto;
     font-weight: 700;
-    background-color: white;
+    background-color: #FFFFF1;
     padding: 0px, 100px;
-    border-radius: 10px;
-    border: 10px solid white;
+    padding-left: 40px;
+  
+   /* border-radius: 10px;
+    border: 10px solid white; */
     color: #424436;
     font-family: "Montserrat", sans-serif;
 }

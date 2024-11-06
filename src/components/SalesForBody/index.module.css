@@ -30,10 +30,10 @@
     top: -56px;
     left: 0px;
     font-size: 64px;
-    background-color: white;
+    background-color:  #FFFFF1;
     padding: 0px, 100px;
     border-radius: 10px;
-    border: 10px solid white;
+    /* border: 10px solid white; */
 
     color: #424436;
 
@@ -47,7 +47,7 @@
     position: absolute;
     top: -40px;
     right: 0px;
-    background-color: white;
+    background-color:  #FFFFF1;
     padding: 0px, 100px;
     border-radius: 5px;
     border: 1px solid rgb(208, 208, 208);
