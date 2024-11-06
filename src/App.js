@@ -10,15 +10,19 @@ import NotFoundPage from './pages/NotFoundPage';
 import CategoriesPage from './pages/CategoriesPage';
 import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
 import { useState } from 'react';
-
+import { Context } from './context';
 
 
 
 function App() {
 
+    const [menuActive, setMenuActiv] = useState(false)
+    const openMenu = () => setMenuActiv(true)
+    const closeMenu = () => setMenuActiv(false)
   
   return (
     <div >
+      <Context.Provider value={{openMenu, closeMenu, menuActive}}>     
       <Header/>
         <Routes>
       <Route path='/' element={<MainPage/>}/>
@@ -31,7 +35,7 @@ function App() {
           
       </Routes>
       <Footer/>
-
+      </Context.Provider>
     </div>
   );
 }

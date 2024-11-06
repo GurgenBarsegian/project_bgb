@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import NavMenu from '../NavMenu';
 import s from './index.module.css';
 import { useSelector } from 'react-redux';
+import { MdOutlineMenu } from "react-icons/md";
+import { Context } from '../../context';
 
 export default function Header() {
 
   const cartState = useSelector(store => store.cart);
+
+  const {openMenu} =  useContext(Context);
 
   const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
 
@@ -21,6 +25,7 @@ export default function Header() {
           : <span className={s.number}>{ totalCount }</span>
         }
         </Link>
+        <MdOutlineMenu onClick={openMenu}/>
     </div>
   )
 }
