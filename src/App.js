@@ -15,6 +15,7 @@ function App() {
   return (
     <div>
       <Header />
+      <main className="wrap">
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
@@ -27,6 +28,7 @@ function App() {
             element={<ProductsByCategoriesPage />}
           />
         </Routes>
+      </main>
          <Footer />
     </div>
   );

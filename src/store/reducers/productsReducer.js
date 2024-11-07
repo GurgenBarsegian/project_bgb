@@ -28,9 +28,7 @@ export const productsReducer = (state=[], action) => {
     } else if (action.type === GET_DISCOUNTED_ITEMS) {
         if (action.payload) {
             state.map(el => {
-                if(el === ){
                     el.visible = false
-                }
                 return el
             })
         } else {
