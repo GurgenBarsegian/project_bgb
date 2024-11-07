@@ -8,12 +8,12 @@ import { singleProductReducer } from './reducers/singleProductReducer';
 import { categoryReducer } from './reducers/categoryReducer';
 
 
+
 const rootReducer = combineReducers({   
     categories: categoriesReducer,
     category: categoryReducer,
     products: productsReducer,
     productsByCategory: productsByCategoryReducer,
-    cart: cartReducer,
     singleProduct:singleProductReducer,
 
 })
