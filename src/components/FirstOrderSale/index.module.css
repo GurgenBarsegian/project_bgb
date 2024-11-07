@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  max-width: 1360px;
+  /* max-width: 1360px; */
   border-radius: 12px;
   height: auto;
   background: linear-gradient(80.46deg, #87933d -0.68%, #55610b 66.66%);
@@ -56,10 +56,12 @@
   font-weight: 500;
   width: 380px;
   height: 30px;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 32px ;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
+
+
 
 .form_container > form > button {
   background-color: white;
