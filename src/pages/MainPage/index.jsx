@@ -1,4 +1,3 @@
-
 import React from 'react'
 import s from './index.module.css'
 import { Link } from 'react-router-dom'
@@ -15,14 +14,20 @@ export default function MainPage() {
       <div className={s.Main}>
            <p >Amazing Discounts</p>
            <p>on Garden Products!</p>
+           <Link to='/sales' >Check out</Link>
       </div>
-        <Link to='/sales'>Check out</Link>
+       </div >
+       <div className={s.category}>
+        <h2>Categories</h2>
+        <Link to='/categories'>All categories</Link>
        </div>
-
+      <div >
         <CategoriesPageForMain/>
         <FirstOrderSale/>
+        <div className={s.sale_main}> 
         <SalesForBody />
-
+        </div>
+      </div>
     </div>
   )
 }

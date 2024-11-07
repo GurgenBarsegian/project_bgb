@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 *{
     font-family: Montserrat;
 }
 
 .footer {
-    max-height: 948px;
+    /* position: fixed; */
     padding: 0px 40px 80px 40px;
-    display: grid;
+    max-width: 1440px;
+    margin: auto;
+    height: 948px;
+    top: 2594px;
+    gap: 40px;
+
 }
 
 .contactText {
     font-size: 64px;
+    color: #424436;
+    margin-left: 20px;
+    margin-top: 70px;
 }
 
 .cardsWrapper {

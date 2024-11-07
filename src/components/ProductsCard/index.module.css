@@ -6,36 +6,52 @@
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid rgb(222, 222, 222);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    position: relative;
+    padding: 0px ;
 
-    height: 422px;
+    top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+    position: relative;
+    
+}
+
+.card div {
+    padding-left: 10px;
+    padding-bottom: 5px;   
+    
 }
 
 
 .card img {
     width: 100%;
-    height: 284px;
-    border-bottom: 1px solid grey;
+    height: 250px;
+    object-fit: fill;
+    border-bottom: 1px solid rgb(211, 211, 211);
     border-radius: 10px 10px 0px 0px;
+    
 }
 
-.card p {
-    text-align: left;
-    padding-left: 10px;
-    font-size: 20px;
-
-
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
+.card p { 
+    padding-top: 10px;
+    font-size:  15px;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+    
+    
 }
+ .card p > p{
+    font-size: 25px;
+    color: rgb(67, 66, 66);
+    font-weight: 600;
+    
+} 
+
 
 
 .card>svg {
@@ -43,6 +59,7 @@
     cursor: pointer;
     top: 5px;
     right: 10px;
+    
 }
 
 .price {
@@ -52,20 +69,44 @@
 
 .discont {
     position: absolute;
+    width: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 4px;
     top: 10px;
     right: 10px;
-    border: 1px solid;
+    border: 0px solid black;
     border-radius: 5px;
-    background-color: #F26D22;
+    background-color: rgb(255, 109, 25);
     color: white;
-
-    /* width: 63px; */
-    height: 34px;
-    padding: 4px 8px 4px 8px;
-    border-color: #F26D22;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.03em;
 }
-
+.line{
+    text-decoration: line-through;
+    color: gray;
+    font-size: 12px;
+}
+ .card div > div {
+    border: 0px solid black;
+    background-color: rgb(255, 109, 25);
+    width: 90%;
+    color: white;
+    text-align: center;
+    margin: 3px;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    top: 48%;
+    display: none;
+    
+} 
+.card:hover div > div{
+     display: block;
+    
+}
+.cart:hover {
+    background-color: rgb(69, 69, 69);
+}
