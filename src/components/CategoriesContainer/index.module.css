@@ -1,20 +1,17 @@
-.categories_container{
-    /* max-width: 1360px; */
-    height: 200px;
-    display: grid; 
-    grid-template-columns: repeat(4, 2fr);
-    gap: 30px;
-      
-    margin: auto;
-    
- 
+.categories_container {
+  max-width: 1360px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 40px;
+  top: 808px;
+  
+  /* margin: auto;
+    margin-left: 190px; */
+
   /* width: 1360px;
   height: 418px;
 margin-top: 808px;
-margin-left: 40px;
+
 opacity: 0px; */
-
 }
-
-
-
