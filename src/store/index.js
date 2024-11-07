@@ -6,7 +6,6 @@ import { productsByCategoryReducer } from './reducers/productsByCategoryReducer'
 import { cartReducer } from './reducers/cartReducer';
 import { singleProductReducer } from './reducers/singleProductReducer';
 import { categoryReducer } from './reducers/categoryReducer';
-import { cartReducer } from './reducers/cartReducer';
 
 
 const rootReducer = combineReducers({   
@@ -16,7 +15,6 @@ const rootReducer = combineReducers({
     productsByCategory: productsByCategoryReducer,
     cart: cartReducer,
     singleProduct:singleProductReducer,
-    cart: cartReducer
 
 })
 
