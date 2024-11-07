@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Montserrat;
+    border: none;
+}
+
+.singleProduct {
+    margin: 40px;
+}
+
+.breadCrums {
+    display: flex;
+    align-items: center;
+}
+
+.breadCrums>a {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    color: #8B8B8B;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 20.16px;
+}
+
+.breadCrums>a:hover {
+    background-color: #F2F6D3;
+}
+
+.breadCrums>span {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #DDDDDD;
+    /* Задайте яркий цвет для проверки */
+    height: 2px;
+    width: 16px;
+}
+
+
+
+.image {
+    width: 780px;
+    height: 572px;
+    margin: 40px 32px 0 0;
+}
+
+.info {
+    display: flex;
+}
+
+.allText {
+    width: 548px;
+    height: 574px;
+    margin: 40px 0 0 0;
+
+}
+
+.allText>h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #424436;
+}
+
+.value {
+    width: 359px;
+    height: 70px;
+    margin: 32px 189px 32px 0;
+    position: relative;
+}
+
+.price {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 70.4px;
+    color: #424436;
+    margin-right: 32px;
+}
+
+.oldPrice {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+    color: #8B8B8B;
+    text-decoration: line-through;
+    text-align: right;
+    margin: 18px 16px 0 0;
+}
+
+.discontPercent {
+    position: absolute;
+    padding: 4px 8px 4px 8px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    background-color: #F26D22;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+.addToCart {
+    display: flex;
+    gap: 32px;
+    margin: 32px 0 32px 0;
+}
+
+
+
+.addToCart>div {
+    width: 200px;
+    height: 58px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: fit-content;
+}
+
+.calcButton {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #DDDDDD;
+    padding: 17px;
+    text-align: center;
+    color: #8B8B8B;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.count {
+    width: 96px;
+    height: 58px;
+    margin: 0px -9px;
+    text-align: center;
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    color: #424436;
+}
+
+.addToCart>button {
+    background-color: #92A134;
+    color: #FFFFFF;
+    width: 316px;
+    height: 58px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.description :first-child {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #424436;
+}
+
+.description :last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+    color: #424436;
+}

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { sendOrder } from "../../requests/post";
 import SuccessMessage from "../../components/SuccessMessage";
 import { useForm } from "react-hook-form";
+import { clearCartAction } from "../../store/reducers/cartReducer";
 
 export default function CartPage() {
   const [isSuccessful, setIsSuccessful] = useState(false);
@@ -78,6 +79,7 @@ export default function CartPage() {
 
   const closeSuccessMessage = () => {
     setIsSuccessful(false);
+    dispatch(clearCartAction())
   };
 
   return (
