@@ -10,6 +10,20 @@ import NotFoundPage from "./pages/NotFoundPage";
 import CategoriesPage from "./pages/CategoriesPage";
 import ProductsByCategoriesPage from "./pages/ProductsByCategoriesPage";
 import { useState } from "react";
+import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom'
+import MainPage from './pages/MainPage';
+import AllProductsPage from './pages/AllProductsPage';
+import AllSalesPage from './pages/AllSalesPage';
+import CartPage from './pages/CartPage';
+import NotFoundPage from './pages/NotFoundPage';
+import CategoriesPage from './pages/CategoriesPage';
+import SingleProductPage from './pages/SingleProductPage';
+
+
+
 
 function App() {
   return (
@@ -31,7 +45,8 @@ function App() {
       </main>
          <Footer />
     </div>
-  );
+
+  )
 }
 
 export default App;
