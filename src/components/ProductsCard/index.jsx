@@ -9,7 +9,7 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
 
   const discontProcent = Math.round(100 - ((discont_price / price) * 100));
 
-  const tempPrice =() =>{
+  const tempPrice = () => {
 
     if(discont_price === null){
       return <p>${price}</p>

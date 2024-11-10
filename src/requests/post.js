@@ -1,4 +1,4 @@
-export const addNewCustomer = (new_customer) => {
+export const sendFirstOrder = (new_customer) => {
     fetch('http://localhost:3333/sale/send', {
         method: 'POST', 
         headers: {
@@ -7,7 +7,7 @@ export const addNewCustomer = (new_customer) => {
         body: JSON.stringify(new_customer)
     })
     .then(res=> res.json())
-    .then(json => json)
+    .then(json => console.log(json))
 }
 
 export const sendOrder = (new_order) => {
@@ -19,5 +19,5 @@ export const sendOrder = (new_order) => {
         body: JSON.stringify(new_order)
     })
     .then(res=> res.json())
-    .then(json => json)
+    .then(json => console.log(json))
 }

@@ -28,7 +28,7 @@ export default function SalesForBody() {
     const randomItems = shuffleArray(salesProducts).slice(0, 4);
 
 
-console.log(randomItems);
+//console.log(randomItems);
 
     
   return (
