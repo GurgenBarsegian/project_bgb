@@ -13,7 +13,7 @@ export default function CategoriesPageForMain() {
   useEffect(() => dispatch(getCategories), []);
 
   return (
-    <div className={s.category}>
+    <div className={s.category} >
       <CategoriesContainer categories={categoriesState} />
     </div>
   );

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { sendOrder } from "../../requests/post";
 import SuccessMessage from "../../components/SuccessMessage";
 import { useForm } from "react-hook-form";
+import { clearCartAction } from "../../store/reducers/cartReducer";
 
 export default function CartPage() {
   const [isSuccessful, setIsSuccessful] = useState(false);
@@ -50,6 +51,7 @@ export default function CartPage() {
       count: totalCount,
       items: cartState,
     });
+
     setIsSuccessful(true);
     reset();
   };
@@ -77,6 +79,7 @@ export default function CartPage() {
 
   const closeSuccessMessage = () => {
     setIsSuccessful(false);
+    dispatch(clearCartAction())
   };
 
   return (
@@ -104,29 +107,23 @@ export default function CartPage() {
               <input
                 type="text"
                 placeholder="Name"
-                // name="name"
                 {...nameRegister}
                 className={s.input}
-                required
               />
               {errors.name && <p>{errors.name?.message}</p>}
               <input
-                type="tel"
+                type="text"
                 placeholder="Phone number"
-                // name="phone_number"
                 {...phoneNumberRegister}
                 className={s.input}
-                required
               />
               {errors.phonenumber && <p>{errors.phonenumber?.message}</p>}
 
               <input
                 type="email"
                 placeholder="Email"
-                // name="email"
                 {...emailRegister}
                 className={s.input}
-                required
               />
               {errors.email && <p>{errors.email?.message}</p>}
               <button type="submit" className={s.button}>
