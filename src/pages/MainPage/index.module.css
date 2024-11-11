@@ -10,7 +10,7 @@
 
 .main img {
     max-width: 1440px;
-    width: 1440%;
+    width: 1440px;
     height: 900px;
     margin: auto;
     filter: brightness(70%);
@@ -59,7 +59,7 @@
 .category > a{
     text-decoration: none;
     top: -9px;
-    max-width: 1440px;
+    max-width: 1360px;
     margin: auto;
     background-color:  #FFFFF1;
     border-radius: 5px;
@@ -74,7 +74,7 @@
     max-width: 1360px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     margin-top: 1px;
     margin-bottom: 10px;
 }
@@ -90,8 +90,8 @@
     padding: 0px, 100px;
     padding-left: 40px;
   
-   /* border-radius: 10px;
-    border: 10px solid white; */
+    border-radius: 10px;
+    border: 10px solid white; 
     color: #424436;
     font-family: "Montserrat", sans-serif;
 }

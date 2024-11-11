@@ -1,10 +1,10 @@
 .categories_container{
-    /* max-width: 1360px; */
-    height: 200px;
+    max-width: 1360px; 
+    margin: auto;
+    height: 170px; 
     display: grid; 
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 2fr);  
     gap: 30px;
-      
     margin: auto;
     
  

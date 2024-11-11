@@ -1,9 +1,17 @@
+.cart {
+    max-width: 1360px;
+    margin: auto;
+    color: #424436;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+}
 
 .cart1{
     width: 1360px;
     height: auto;
     margin: auto;
     display: flex;
+    margin-top: 40px;
     justify-content: space-between; /* Для распределения блоков по ширине */
     align-items: flex-start; /* Выровнять блоки по верху */
     

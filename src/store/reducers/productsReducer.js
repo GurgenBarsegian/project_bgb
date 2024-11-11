@@ -29,13 +29,11 @@ export const productsReducer = (state=[], action) => {
     } else if (action.type === GET_DISCOUNTED_ITEMS) {
         if (action.payload) {
             state.map(el => {
-<<<<<<< HEAD
+
                 if(!el.discont_price){
-=======
->>>>>>> 19423685b903981b7d67fa2f5e2975103f3a9ecf
                     el.visible = false
                 return el
-            })
+            }})
         } else {
             state.map(el => {
                 el.visible = true;
