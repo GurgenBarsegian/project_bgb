@@ -19,7 +19,7 @@ export default function MainPage() {
        </div >
        <div className={s.category}>
         <h2>Categories</h2>
-        <Link to='/categories'>All categories</Link>
+          <Link to='/categories'>All categories</Link>
        </div>
       <div >
         <CategoriesPageForMain/>

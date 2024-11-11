@@ -1,60 +1,61 @@
 .main {
-    max-width: 1440px;
-    margin: auto;
-    height: 600px;
-    overflow: hidden;   
-    position: relative;
-    border: 0px solid;
-    
+  max-width: 1440px;
+  margin: auto;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  border: 0px solid;
 }
 
 .main img {
+
     max-width: 1440px;
     width: 1440px;
     height: 900px;
     margin: auto;
     filter: brightness(70%);
     
+
 }
 
-
 .main > img {
-    display: block;
-    margin-top: -25%;
+  display: block;
+  margin-top: -25%;
 }
 
 .Main {
-    width: 100%;
-    height: auto;
-    margin: auto;
-   position: absolute;
-   top: 50px;
-   left: 40px;
-   color: white;
-   font-weight: 700;
-   font-size: 85px;
-   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 85px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Main > a {
-    display: flex;
-    position: absolute;
-    border: 1px solid #92A134;
-    background-color: #92A134;
-    color: white;
-    width: 218px;
-    height: 58px;
-    margin: auto;
-    text-decoration: 0;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 40px;
+  display: flex;
+  position: absolute;
+  border: 1px solid #92a134;
+  background-color: #92a134;
+  color: white;
+  width: 218px;
+  height: 58px;
+  margin: auto;
+  text-decoration: 0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 40px;
 }
+
 
 .category > a{
     text-decoration: none;
@@ -94,10 +95,19 @@
     border: 10px solid white; 
     color: #424436;
     font-family: "Montserrat", sans-serif;
+
+}
+
+.category > h2::after {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 370px;
+  width: 70%;
+  border-bottom: 1px solid #dddddd;
 }
 
 .sale_main {
-    position: relative;
-    margin-top: 90px;
+  position: relative;
+  margin-top: 90px;
 }
-

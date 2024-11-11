@@ -27,23 +27,30 @@ function App() {
     const closeMenu = () => setMenuActiv(false)
   
   return (
-    <div >
-      <Context.Provider value={{openMenu, closeMenu, menuActive}}>     
-      <Header/>
-        <Routes>
-      <Route path='/' element={<MainPage/>}/>
-            <Route path='/categories' element={<CategoriesPage/>}/>
-            <Route path='/all_products' element={<AllProductsPage/>}/>
-            <Route path='/sales' element={<AllSalesPage/>}/>
-            <Route path='/cart' element={<CartPage/>}/>
-            <Route path='*' element={<NotFoundPage/>}/>
-            <Route path='/categories/:id' element={<ProductsByCategoriesPage/>}/>
-            <Route path='/products/:product_id' element={<SingleProductPage/>}/>
+
+    <div>
+      <Context.Provider value={{openMenu, closeMenu, menuActive}}>   
+      <Header />
+      <main className="wrap">
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/categories" element={<CategoriesPage />} />
+        <Route path="/all_products" element={<AllProductsPage />} />
+        <Route path="/sales" element={<AllSalesPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path='/products/:product_id' element={<SingleProductPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+        <Route
+          path="/categories/:id"
+          element={<ProductsByCategoriesPage />}
+        />
       </Routes>
-      <Footer/>
-      </Context.Provider>
+      </main>
+      <Footer />
+       </Context.Provider>
     </div>
-)
+  );
+
 }
 
 export default App;

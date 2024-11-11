@@ -30,6 +30,7 @@ export const productsReducer = (state=[], action) => {
         if (action.payload) {
             state.map(el => {
 
+
                 if(!el.discont_price){
                     el.visible = false
                 return el
@@ -40,6 +41,7 @@ export const productsReducer = (state=[], action) => {
                 return el
             })
         }
+
     } else if (action.type === FILTER_PRODUCT) {
         const {min, max} = action.payload;
         state.map(el => {
