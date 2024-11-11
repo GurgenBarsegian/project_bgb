@@ -13,8 +13,8 @@ const rootReducer = combineReducers({
     category: categoryReducer,
     products: productsReducer,
     productsByCategory: productsByCategoryReducer,
-    cart: cartReducer,
     singleProduct:singleProductReducer,
+    cart: cartReducer
 
 
 })

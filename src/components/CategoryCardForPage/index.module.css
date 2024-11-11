@@ -10,17 +10,17 @@
   opacity: 0px;
   width: 248px;
   height: 392px;
-  gap: 16px;
+  gap: 0px;
   opacity: 0px;
 }
 
 .category_card img {
   max-width: 248px;
-  height: 350px;
+  height: 260px;
   border-radius: 20px;
 }
 
-.category_card p {
+.category_card p  {
   align-self: center;
   text-decoration: none;
 }

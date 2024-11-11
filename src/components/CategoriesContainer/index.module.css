@@ -3,6 +3,6 @@
   height: 200px;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  gap: 40px;
+  gap: 25px;
   top: 808px;
 }

@@ -9,26 +9,29 @@ import CartPage from "./pages/CartPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import CategoriesPage from "./pages/CategoriesPage";
 import ProductsByCategoriesPage from "./pages/ProductsByCategoriesPage";
-import SingleProductPage from "./pages/SingleProductPage";
+import SingleProductPage from './pages/SingleProductPage';
+
+
+
 
 function App() {
   return (
     <div>
       <Header />
       <main className="wrap">
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/categories" element={<CategoriesPage />} />
-          <Route path="/all_products" element={<AllProductsPage />} />
-          <Route path="/sales" element={<AllSalesPage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path='/products/:product_id' element={<SingleProductPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-          <Route
-            path="/categories/:id"
-            element={<ProductsByCategoriesPage />}
-          />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/categories" element={<CategoriesPage />} />
+        <Route path="/all_products" element={<AllProductsPage />} />
+        <Route path="/sales" element={<AllSalesPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path='/products/:product_id' element={<SingleProductPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+        <Route
+          path="/categories/:id"
+          element={<ProductsByCategoriesPage />}
+        />
+      </Routes>
       </main>
       <Footer />
     </div>
