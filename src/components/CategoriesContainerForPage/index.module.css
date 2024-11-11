@@ -1,12 +1,22 @@
-.categories_container {
-  max-width: 1360px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-bottom: 300px;
-  margin-top: 100px;
+
+.categories_container{
+    max-width: 1360px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 50px; 
+    margin-bottom: 700px;
+  
+  /* width: 1360px;
+  height: 418px;
+margin-top: 808px;
+margin-left: 40px;
+opacity: 0px; */
 }
+
+
 
 .breadCrumbs {
   display: flex;
@@ -43,4 +53,5 @@ hr {
   height: 2px;
   width: 16px;
 }
+
 

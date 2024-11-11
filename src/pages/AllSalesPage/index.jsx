@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../requests/getProducts';
 import ProductsContainer from '../../components/ProductsContainer';
 import ChangeStateProducts from '../../components/ChangeStateProducts';
-
+import s from './index.module.css'
 
 export default function AllSalesPage() {
 
@@ -23,8 +23,8 @@ export default function AllSalesPage() {
 
 
     return (
-      <div>
-        <h3>All products:</h3>
+      <div className={s.sale}>
+        <h3>Discounted items:</h3>
         <ChangeStateProducts />
         <ProductsContainer  products={salesProducts} />
       </div>
