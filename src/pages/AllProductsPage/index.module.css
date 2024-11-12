@@ -6,3 +6,38 @@
     margin-top: 30px;
     
 }
+.breadCrumbs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadCrumbs>a {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    color: #8B8B8B;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 20.16px;
+  }
+  
+  .breadCrumbs>a:hover {
+    background-color: #F2F6D3;
+  }
+  
+  .breadCrumbs>span {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #DDDDDD;
+    /* Задайте яркий цвет для проверки */
+    height: 2px;
+    width: 16px;
+  }

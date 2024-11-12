@@ -16,7 +16,7 @@ export default function CategoriesPage() {
 
   return (
     <div className={s.category}>
-<CategoriesContainerForPage categories={categoriesState} />
+      <CategoriesContainerForPage categories={categoriesState} />
     </div>
   )
 }

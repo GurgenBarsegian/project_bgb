@@ -8,11 +8,7 @@ export default function ProductsContainer({products}) {
   return (
     <div>
 
-      <div className={s.breadCrumbs}>
-          <Link to="/">Main Page</Link>
-          <hr />
-          <span>All products</span>
-        </div>
+      
       {/* <div>
       <ChangeStateProducts />
       </div> */}
