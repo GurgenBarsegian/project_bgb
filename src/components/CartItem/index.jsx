@@ -22,7 +22,7 @@ export default function CartItem({id, image, title, discont_price, price, count}
 
   return (
     <div className={s.card}>
-      <img src={`http://localhost:3333${image}`} alt={title} className={s.image} />
+      <img src={`https://telran-project-backend-4z.onrender.com${image}`} alt={title} className={s.image} />
       <div className={s.details}>
         <p className={s.title}>{ title }</p>
         <div className={s.quantity_controls}>

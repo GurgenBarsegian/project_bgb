@@ -1,9 +1,10 @@
 import { loadCategoriesAction } from "../store/reducers/categoriesReducer";
 import { loadCategoryAction } from "../store/reducers/categoryReducer";
+import { domain } from "../domain";
 
 export const getCategories = (dispatch) => {
 
-    fetch('http://localhost:3333/categories/all')
+    fetch(`${domain}/categories/all`)
         .then(res => res.json())
         .then(json => dispatch(loadCategoriesAction(json)))
 
@@ -12,7 +13,7 @@ export const getCategories = (dispatch) => {
 export const getCategory = (category_id) => {
 
     return dispatch => (
-        fetch(`http://localhost:3333/categories/${category_id}`)
+        fetch(`${domain}/categories/${category_id}`)
             .then(res => res.json())
             .then(json => dispatch(loadCategoryAction(json)))
     )

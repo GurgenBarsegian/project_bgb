@@ -1,5 +1,5 @@
 .body_sales{
-    max-width: 1360px;
+    width: 100%;
     margin: auto;
     margin-top: 60px;
     display: grid; 

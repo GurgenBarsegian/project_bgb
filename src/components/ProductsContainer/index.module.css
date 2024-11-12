@@ -1,7 +1,10 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 1360px;
+    width: 1400px;
     gap: 30px;
     margin: auto;
 }
+
+
+  

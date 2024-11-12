@@ -25,7 +25,7 @@ export default function AllSalesPage() {
     return (
       <div className={s.sale}>
         <h3>Discounted items:</h3>
-        <ChangeStateProducts />
+        
         <ProductsContainer  products={salesProducts} />
       </div>
     )
