@@ -1,9 +1,10 @@
-import { loadAllProductsAction } from "../store/reducers/productsReducer"
-import { loadSingleProductAction } from "../store/reducers/singleProductReducer" 
+import { loadAllProductsAction } from "../store/reducers/productsReducer";
+import { loadSingleProductAction } from "../store/reducers/singleProductReducer" ;
+import { domain } from "../domain";
 
 export const getProducts = (dispatch) => {
 
-    fetch('http://localhost:3333/products/all')
+    fetch(`${domain}/products/all`)
         .then(res => res.json())
         .then(json => dispatch(loadAllProductsAction(json)))
 
@@ -11,7 +12,7 @@ export const getProducts = (dispatch) => {
 
 export const getSingleProduct = (product_id) => {
     return dispatch => (
-        fetch(`http://localhost:3333/products/${product_id}`)
+        fetch(`${domain}/products/${product_id}`)
             .then(res => res.json())
             .then(json => dispatch(loadSingleProductAction(json)) )
     )

@@ -1,5 +1,7 @@
+import { domain } from "../domain"
+
 export const sendFirstOrder = (new_customer) => {
-    fetch('http://localhost:3333/sale/send', {
+    fetch(`${domain}/sale/send`, {
         method: 'POST', 
         headers: {
              "Content-type": "application/json; charset=UTF-8"
@@ -11,7 +13,7 @@ export const sendFirstOrder = (new_customer) => {
 }
 
 export const sendOrder = (new_order) => {
-    fetch('http://localhost:3333/order/send', {
+    fetch(`${domain}/order/send`, {
         method: 'POST', 
         headers: {
              "Content-type": "application/json; charset=UTF-8"
