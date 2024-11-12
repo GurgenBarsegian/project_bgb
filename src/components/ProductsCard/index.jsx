@@ -2,6 +2,7 @@ import React from 'react';
 import s from './index.module.css';
 import { addProductToCartAction } from '../../store/reducers/cartReducer';
 import { useDispatch } from 'react-redux';
+import { domain } from '../../domain';
  
 export default function ProductsCard({ id, image, title, price, discont_price}) {
 
@@ -21,7 +22,7 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
   
   return (
     <div  className={s.card}>
-      <img src={`http://localhost:3333${image}`} alt={title} />
+      <img src={`${domain}${image}`} alt={title} />
       
       <div>
         <p>{ title }</p>

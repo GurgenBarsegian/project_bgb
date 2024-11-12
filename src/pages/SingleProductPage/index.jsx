@@ -6,6 +6,7 @@ import { getSingleProduct } from "../../requests/products";
 import s from './index.module.css';
 import { getCategory } from "../../requests/categories";
 import { addProductToCartAction } from "../../store/reducers/cartReducer";
+import { domain } from "../../domain";
 
 export default function SingleProductPage() {
   const { product_id } = useParams();
@@ -54,7 +55,7 @@ export default function SingleProductPage() {
             </div>
 
             <div className={s.info}>
-              <img src={`http://localhost:3333${image}`} alt={title} className={s.image} />
+              <img src={`${domain}${image}`} alt={title} className={s.image} />
 
               <div className={s.allText}>
 
