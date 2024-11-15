@@ -25,7 +25,7 @@ export default function AllSalesPage() {
     return (
       <div>
         <h3>All products:</h3>
-        <ChangeStateProducts />
+    
         <ProductsContainer  products={salesProducts} />
       </div>
     )

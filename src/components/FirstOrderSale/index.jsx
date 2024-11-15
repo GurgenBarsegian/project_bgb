@@ -9,7 +9,9 @@ export default function FirstOrderSale() {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm();
+  } = useForm(); 
+  
+  //created the validation of form. The retrieved data is sent to the backend via a POST request. 
 
  const nameRegister = register("name", {
   required:'*The field "Name" is required',

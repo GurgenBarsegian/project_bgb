@@ -1,6 +1,6 @@
 .category_card {
   display: flex;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   color: rgb(177, 177, 177);
   font-family: "Montserrat", sans-serif;
@@ -24,3 +24,4 @@
   align-self: center;
   text-decoration: none;
 }
+
