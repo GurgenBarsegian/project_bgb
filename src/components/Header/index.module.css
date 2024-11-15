@@ -26,13 +26,11 @@
 } 
 
 .number{
-    max-width: 1440px;
-    margin: auto;
-    margin-right: 8%;
+
     position: absolute;
 
     top: 20px;
-    right: 13px;
+    right: 20px;
     background-color: #92A134;
     color: white;
 

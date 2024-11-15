@@ -55,7 +55,7 @@ export default function ChangeStateProducts() {
            
               </div>
         </div>
-        <ProductsContainer products={allProductsState}/> 
+        
         </div>
     
   )

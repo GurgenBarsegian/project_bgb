@@ -1,11 +1,14 @@
 .products {
-    max-width: 1360px;
-    margin: auto;
+    /* max-width: 1360px;
+    margin: auto;  */
     color: #424436;
     font-family: "Montserrat", sans-serif;
     margin-top: 30px;
+   
     
 }
+
+
 .breadCrumbs {
     display: flex;
     align-items: center;
@@ -39,5 +42,6 @@
     border-top: 1px solid #DDDDDD;
     /* Задайте яркий цвет для проверки */
     height: 2px;
-    width: 16px;
+    /* width: 16px; */
   }
+  
