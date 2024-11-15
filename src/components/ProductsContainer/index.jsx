@@ -9,9 +9,6 @@ export default function ProductsContainer({products}) {
     <div>
 
       
-      {/* <div>
-      <ChangeStateProducts />
-      </div> */}
       <div className={s.container}>
           {
               products.filter(el => el.visible).map(el => <ProductsCard key={el.id} {...el} />)
