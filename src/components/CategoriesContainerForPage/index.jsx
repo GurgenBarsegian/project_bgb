@@ -14,6 +14,7 @@ export default function CategoriesContainerForPage({ categories}) {
         <hr />
         <span>Categories</span>
       </div>
+      <h1 className={s.title}>Categories</h1>
       <div className={s.categories_container}>
         {categories.map((el) => (
           <CategoryCardForPage key={el.id} {...el} categories={categories} />

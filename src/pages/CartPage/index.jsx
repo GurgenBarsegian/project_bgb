@@ -56,21 +56,7 @@ export default function CartPage() {
     reset();
   };
 
-  // const submit = (e) => {
-  //   e.preventDefault();
-  //   const { name, phone_number, email } = e.target;
 
-  //   const newCustomer = {
-  //     name: name.value,
-  //     phone_number: +phone_number.value,
-  //     email: email.value,
-  //   };
-
-  //   console.log(newCustomer);
-  //   sendOrder(newCustomer);
-  //   setIsSuccessful(true);
-  //   e.target.reset();
-  // };
 
   const totalCount = cartState.reduce((acc, el) => acc + el.count, 0);
   const totalSum = +cartState

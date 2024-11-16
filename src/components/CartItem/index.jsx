@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RxCross2 } from "react-icons/rx";
 import { decrementCountAction, deleteProductFromCartAction, incrementCountAction } from '../../store/reducers/cartReducer';
 import s from './index.module.css';
+import { domain } from '../../domain';
 
 export default function CartItem({id, image, title, discont_price, price, count}) {
 
@@ -13,16 +14,16 @@ export default function CartItem({id, image, title, discont_price, price, count}
   const tempPrice =() =>{
 
     if(discont_price === null){
-      return <p>{price}$</p>
+      return <p>{price*count}$</p>
     } else {
-      return <p>{discont_price}$ <span className={s.old_price}>{price}$</span></p>
+      return <p>{discont_price*count}$ <span className={s.old_price}>{price}$</span></p>
     }
   
   }
 
   return (
     <div className={s.card}>
-      <img src={`http://localhost:3333${image}`} alt={title} className={s.image} />
+      <img src={`${domain}${image}`} alt={title} className={s.image} />
       <div className={s.details}>
         <p className={s.title}>{ title }</p>
         <div className={s.quantity_controls}>

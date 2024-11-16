@@ -1,0 +1,1 @@
+export const domain = 'https://telran-project-backend-4z.onrender.com';

@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './index.module.css'
-
+import { Link } from 'react-router-dom';
+import { domain } from '../../domain';
 
 
 export default function CategoryCard({title, image}) {
@@ -14,7 +15,7 @@ export default function CategoryCard({title, image}) {
         </div>
         </div> 
 
-      <img src={`http://localhost:3333${image}`} alt={title} />
+      <img src={`${domain}${image}`} alt={title} />
       <p>{title}</p>
        </div>
   )

@@ -1,18 +1,58 @@
-.menu{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 25px;
-    background-color: #FFFFF1;
-    color: black;
-    font-size: 17px;
-    font-weight: 400;
-    
+.menu div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+  color: #424436;
+  font-size: 17px;
+  font-weight: 400;
 }
-.menu > a {
-    text-decoration: none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
+.menu > div > a {
+  text-decoration: none;
+  color: #424436;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
+.menu > div > svg {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 200;
+    width: 65%;
+    height: 100%;
+  }
+
+  .menu > div > svg {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 50px;
+  }
+
+  .menu > div > a {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+}
+
+.menu.active {
+  display: flex;
+}

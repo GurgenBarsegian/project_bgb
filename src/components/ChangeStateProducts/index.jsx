@@ -48,14 +48,14 @@ export default function ChangeStateProducts() {
             <label >Sorted</label>
             <select onInput={sort}>
                 <option value="-">by default</option>
-                <option value="upside">upside</option>
-                <option value="downside">downside</option>
-                <option value="in alphabetic order">in alphabetic order</option>
+                <option value='upside'>upside</option>
+                <option value='downside'>downside</option>
+                <option value='in alphabetic order'>in alphabetic order</option>
             </select>
            
               </div>
         </div>
-        <ProductsContainer products={allProductsState}/> 
+        
         </div>
     
   )

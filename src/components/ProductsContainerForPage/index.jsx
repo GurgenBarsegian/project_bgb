@@ -8,8 +8,7 @@ export default function ProductsContainerForPage({products}) {
   return (
          
     <div className={s.products_cont}>
- {products.products.map(el => <ProductsCard key={el.id}  {...el}/> )} 
-
+      {products.products.map(el => <ProductsCard key={el.id}  {...el}/> )} 
     </div>
   
   )
