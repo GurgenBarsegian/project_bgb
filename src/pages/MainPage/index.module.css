@@ -188,8 +188,14 @@
       width: 270px;
         font-size: 48px;
     font-weight: 700;
-    background-color: #fffff1;
-    border: 10px solid #fffff1;
+
+    background-color: #FFFFF1;
+    padding: 0px, 100px;
+    
+    border: 10px solid #FFFFF1;
+    border-radius: 10px;
+    
+
     color: #424436;
     font-family: "Montserrat", sans-serif;
   }

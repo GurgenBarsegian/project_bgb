@@ -1,11 +1,14 @@
-.menu div {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 25px;
-  color: #424436;
-  font-size: 17px;
-  font-weight: 400;
+
+.menu div{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+    
+    color: #424436;
+    font-size: 17px;
+    font-weight: 400;
+
 }
 .menu > div > a {
   text-decoration: none;
