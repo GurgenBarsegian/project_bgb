@@ -18,7 +18,6 @@
 }
 
 
-
 .count {  
     left: 5px;
     border-radius: 50%;
@@ -30,7 +29,7 @@
     position: absolute;
 
     top: 20px;
-    right: 20px;
+    right: 230px;
     background-color: #92A134;
     color: white;
 

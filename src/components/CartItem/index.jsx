@@ -14,9 +14,9 @@ export default function CartItem({id, image, title, discont_price, price, count}
   const tempPrice =() =>{
 
     if(discont_price === null){
-      return <p>{price}$</p>
+      return <p>{price*count}$</p>
     } else {
-      return <p>{discont_price}$ <span className={s.old_price}>{price}$</span></p>
+      return <p>{discont_price*count}$ <span className={s.old_price}>{price}$</span></p>
     }
   
   }

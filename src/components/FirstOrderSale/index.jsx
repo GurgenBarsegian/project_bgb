@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./index.module.css";
-import { sendFirstOrder} from "../../requests/post";
+import { sendFirstOrder } from "../../requests/post";
 import { useForm } from "react-hook-form";
 
 export default function FirstOrderSale() {
@@ -11,36 +11,38 @@ export default function FirstOrderSale() {
     formState: { errors },
   } = useForm();
 
- const nameRegister = register("name", {
-  required:'*The field "Name" is required',
-  pattern: {
-    value: /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/,
-    message: "*Please start your name with a letter"
-  }
- });
+  //created the validation of form. The retrieved data is sent to the backend via a POST request.
 
- const phoneNumberRegister = register("phonenumber", {
-  required: '*The field "Phone number" is required',
-  pattern: {
-    value: /^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$/,
-    message: "*Please, enter valid phone number"
-  }
- });
+  const nameRegister = register("name", {
+    required: '*The field "Name" is required',
+    pattern: {
+      value: /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/,
+      message: "*Please start your name with a letter",
+    },
+  });
 
- const emailRegister = register("email", {
-  required:'*The field "Email" is required',
-  pattern: {
-    value:/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    message: "*Please, enter valid email"
-  }
- })
+  const phoneNumberRegister = register("phonenumber", {
+    required: '*The field "Phone number" is required',
+    pattern: {
+      value: /^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$/,
+      message: "*Please, enter valid phone number",
+    },
+  });
 
-const firstOrder = (data) => {
-  sendFirstOrder({
-    ...data 
-  })
-  reset();
-}
+  const emailRegister = register("email", {
+    required: '*The field "Email" is required',
+    pattern: {
+      value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+      message: "*Please, enter valid email",
+    },
+  });
+
+  const firstOrder = (data) => {
+    sendFirstOrder({
+      ...data,
+    });
+    reset();
+  };
 
   return (
     <div className={s.form}>
@@ -52,16 +54,26 @@ const firstOrder = (data) => {
         />
 
         <form onSubmit={handleSubmit(firstOrder)}>
-          <input type="text" placeholder="Name"  className="input" {...nameRegister}/>
-          {errors.name && <p>{errors.name?.message}</p>}
+          <input
+            type="text"
+            placeholder="Name"
+            className="input"
+            {...nameRegister}
+          />
+           {errors.name && <p>{errors.name?.message}</p>}
+         
 
-          <input type="text" placeholder="Phone number" {...phoneNumberRegister}/>
+          <input
+            type="text"
+            placeholder="Phone number"
+            {...phoneNumberRegister}
+          />
           {errors.phonenumber && <p>{errors.phonenumber?.message}</p>}
 
           <input type="text" placeholder="Email" {...emailRegister} />
           {errors.email && <p>{errors.email?.message}</p>}
 
-          <button>Get a discount</button>             
+          <button>Get a discount</button>
         </form>
       </div>
     </div>

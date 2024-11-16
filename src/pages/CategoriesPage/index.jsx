@@ -12,7 +12,7 @@ export default function CategoriesPage() {
 
   const dispatch = useDispatch();
 
-  useEffect(()=> dispatch(getCategories), []);
+  useEffect(()=> dispatch(getCategories), []);//we get all categories via fetch request and dispatch
 
   return (
     <div className={s.category}>

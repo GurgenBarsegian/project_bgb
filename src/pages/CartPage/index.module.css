@@ -15,10 +15,8 @@
     margin: auto;
     display: flex;
     margin-top: 40px;
-    justify-content: space-between; /* Для распределения блоков по ширине */
-    align-items: flex-start; /* Выровнять блоки по верху */
-    
-    
+    justify-content: space-between; 
+    align-items: flex-start;     
     gap: 32px;
 }
 .list{

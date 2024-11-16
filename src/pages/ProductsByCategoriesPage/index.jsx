@@ -21,22 +21,22 @@ export default function ProductsByCategoriesPage() {
   useEffect(() =>{
     if(id){ 
       dispatch(getProductsByCategories(id))
-    }}, [id, dispatch]);
+    }}, []); // get the all products of one category using category id, via fetch-request and dispatch
 
   console.log(productsByCategoryState);
 
   
   // Добавляем проверку на наличие продуктов перед доступом к categoryId
+  //Add a check for the availability of products before granting access to the categoryId.
   const categoryId = productsByCategoryState.products?.[0]?.categoryId;
 
   useEffect(() => {
-    if (categoryId) { // Проверяем, что categoryId определен
+    if (categoryId) { // Проверяем, что categoryId определен Check that the categoryId is defined
       dispatch(getCategory(categoryId)); 
     }
   }, [categoryId, dispatch]);
 
 
-  console.log(productsByCategoryState);
 
   return (
     <div>
