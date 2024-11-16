@@ -9,7 +9,6 @@ export default function ChangeStateProducts() {
  
     
 
-    // const allProductsState = useSelector(store => store.products);
     const allProductsState = useSelector(store => 
         store.products.filter(product => 
             store.discountedOnly ? product.discounted : true
@@ -41,20 +40,20 @@ export default function ChangeStateProducts() {
 
     return (
     <div >
-        <div className={s.change}> 
-        <div>
+        <div className={s.filter_container}> 
+        <div className={s.filter_section}>
             <label for="chk1">Price: </label>
             <input type="number" placeholder="from" name='min' onChange={handleMinValue}/>
             <input type="number" placeholder="to" name='max' onChange={handleMaxValue}/>
         </div>
-        <div>
+        <div className={s.checkbox_container}>
             <label for="chk1">Discounted items</label>
             <input type="checkbox" checked={isChecked} onChange={e => {
                 handleCheck();
                 handleClick(e);
             }}/>
         </div>
-        <div >
+        <div className={s.filter_section}>
             <label >Sorted</label>
             <select onInput={sort}>
                 <option value="-">by default</option>
@@ -66,7 +65,7 @@ export default function ChangeStateProducts() {
               </div>
         </div>
         
-        </div>
+    </div>
     
   )
 }
