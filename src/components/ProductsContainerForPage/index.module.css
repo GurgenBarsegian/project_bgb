@@ -1,45 +1,45 @@
-.products_cont {
 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        width: 1100px;
-        margin: 20px auto;
-    }
-    .breadCrumbs {
-        display: flex;
-        align-items: center;
-      }
-      
-      .breadCrumbs>a {
-        display: flex;
-        padding: 8px 16px 8px 16px;
-        border-radius: 5px;
-        border: 1px solid #DDDDDD;
-        color: #8B8B8B;
-        text-decoration: none;
-        cursor: pointer;
-        font-weight: 500;
-        line-height: 20.16px;
-      }
-      
-      .breadCrumbs>a:hover {
-        background-color: #F2F6D3;
-      }
-      
-      .breadCrumbs>span {
-        display: flex;
-        padding: 8px 16px 8px 16px;
-        border-radius: 5px;
-        border: 1px solid #DDDDDD;
-      }
-      
-      hr {
-        border: none;
-        border-top: 1px solid #DDDDDD;
-        /* Задайте яркий цвет для проверки */
-        height: 2px;
-        width: 16px;
-      }
-      
-      
+.products_cont {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  width: 1440px;
+  margin: 20px auto;
+}
+
+@media (max-width: 1000px){
+  .products_cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    width: 960px;
+  }
+}
+@media (max-width: 768px){
+  .products_cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    width: 728px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px){
+  .products_cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    width: 440px;
+  }
+}

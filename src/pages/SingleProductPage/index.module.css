@@ -3,6 +3,8 @@
 * {
     font-family: Montserrat;
     border: none;
+    /* Тут я добавил, чтоб линия не подчеркивалась. с ув Гурген */
+    text-decoration-line: none;
 }
 
 .singleProduct {

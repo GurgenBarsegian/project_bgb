@@ -28,8 +28,6 @@ export default function SalesForBody() {
     const randomItems = shuffleArray(salesProducts).slice(0, 4);
 
 
-//console.log(randomItems);
-
     
   return (
     <div className={s.body_sales}>
