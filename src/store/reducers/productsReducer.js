@@ -5,8 +5,8 @@ const SORT_PRODUCTS = 'SORT_PRODUCTS'
 
 export const loadAllProductsAction = products => ({type: LOAD_ALL_PRODUCTS, payload: products})
 
-export const getDiscountedItemsAction = value => ({
-    type: GET_DISCOUNTED_ITEMS, payload: value
+export const getDiscountedItemsAction = isChecked => ({
+    type: GET_DISCOUNTED_ITEMS, payload: isChecked
 })
 
 export const sortProductsAction = value => ({
@@ -28,18 +28,16 @@ export const productsReducer = (state=[], action) => {
     
     } else if (action.type === GET_DISCOUNTED_ITEMS) {
         if (action.payload) {
-            state.map(el => {
-
-
-                if(!el.discont_price){
-                    el.visible = false
-                return el
-            }})
+            return state.map(el => { 
+                if (!el.discont_price) {
+                    return { ...el, visible: false };
+                }
+                return el;
+            });
         } else {
-            state.map(el => {
-                el.visible = true;
-                return el
-            })
+            return state.map(el => {
+                return { ...el, visible: true };
+            });
         }
 
     } else if (action.type === FILTER_PRODUCT) {
@@ -62,3 +60,4 @@ export const productsReducer = (state=[], action) => {
 
     return state
 } 
+

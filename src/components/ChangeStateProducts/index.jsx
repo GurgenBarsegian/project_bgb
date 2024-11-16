@@ -9,7 +9,12 @@ export default function ChangeStateProducts() {
  
     
 
-    const allProductsState = useSelector(store => store.products);
+    // const allProductsState = useSelector(store => store.products);
+    const allProductsState = useSelector(store => 
+        store.products.filter(product => 
+            store.discountedOnly ? product.discounted : true
+        )
+    );
 
     const dispatch = useDispatch();
 
@@ -19,7 +24,9 @@ export default function ChangeStateProducts() {
 
     const [isChecked, setIsChecked] = useState(false);
     const handleCheck = () => setIsChecked(!isChecked);
-    const handleClick = e => dispatch(getDiscountedItemsAction(e.target.checked))
+    const handleClick = e => {
+        dispatch(getDiscountedItemsAction(e.target.checked));
+    };
 
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(Infinity);
@@ -42,7 +49,10 @@ export default function ChangeStateProducts() {
         </div>
         <div>
             <label for="chk1">Discounted items</label>
-            <input type="checkbox" checked={isChecked} onChange={handleCheck} onClick={handleClick}/>
+            <input type="checkbox" checked={isChecked} onChange={e => {
+                handleCheck();
+                handleClick(e);
+            }}/>
         </div>
         <div >
             <label >Sorted</label>

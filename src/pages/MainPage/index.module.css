@@ -89,10 +89,10 @@
     font-weight: 700;
     background-color: #FFFFF1;
     padding: 0px, 100px;
-    padding-left: 40px;
-  
+    
+    border: 10px solid #FFFFF1;
     border-radius: 10px;
-    border: 10px solid white; 
+    
     color: #424436;
     font-family: "Montserrat", sans-serif;
 
