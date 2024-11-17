@@ -3,17 +3,24 @@
 * {
     font-family: Montserrat;
     border: none;
-    /* Тут я добавил, чтоб линия не подчеркивалась. с ув Гурген */
-    text-decoration-line: none;
+    padding: 0;
 }
 
 .singleProduct {
     margin: 40px;
+
+    @media (max-width:1000px) {
+        margin: 20px;
+    }
 }
 
 .breadCrums {
     display: flex;
     align-items: center;
+
+    @media (max-width:480px) {
+        display: none;
+    }
 }
 
 .breadCrums>a {
@@ -26,6 +33,7 @@
     cursor: pointer;
     font-weight: 500;
     line-height: 20.16px;
+    font-size: 16px;
 }
 
 .breadCrums>a:hover {
@@ -34,9 +42,12 @@
 
 .breadCrums>span {
     display: flex;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px;
     border-radius: 5px;
     border: 1px solid #DDDDDD;
+    font-weight: 500;
+    line-height: 20.16px;
+    font-size: 16px;
 }
 
 hr {
@@ -47,12 +58,83 @@ hr {
     width: 16px;
 }
 
+.hiddenTitle {
+    display: none;
 
+    @media (max-width:480px) {
+        display: flex;
+
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30.8px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #424436;
+    }
+}
 
 .image {
     width: 780px;
     height: 572px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    display: block;
+
+    @media (max-width:1000px) {
+        width: 470px;
+    }
+
+    @media (max-width:768px) {
+        width: 354px;
+        height: 273px;
+    }
+
+    @media (max-width:480px) {
+        width: 210px;
+        height: 179px;
+    }
+
+}
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
     margin: 40px 32px 0 0;
+
+    @media (max-width:1000px) {
+        margin: 40px 20px 0 0;
+    }
+
+    @media (max-width:768px) {
+        margin: 32px 20px 0 0;
+    }
+
+    @media (max-width:480px) {
+        margin: 20px 20px 0 0;
+    }
+}
+
+.hiddenDiscontPercent {
+    display: none;
+
+    @media (max-width:480px) {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+
+        padding: 4px 8px;
+        border-radius: 7px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        background-color: #F26D22;
+        color: #fff;
+        margin-bottom: 36px;
+
+    }
 }
 
 .info {
@@ -62,7 +144,23 @@ hr {
 .allText {
     width: 548px;
     height: 574px;
-    margin: 40px 0 0 0;
+    margin-top: 40px;
+
+    @media (max-width:1000px) {
+        width: 470px;
+    }
+
+    @media (max-width:768px) {
+        width: 354px;
+        height: 273px;
+        margin-top: 32px;
+    }
+
+    @media (max-width:480px) {
+        width: 210px;
+        height: 179px;
+        margin-top: 20px;
+    }
 
 }
 
@@ -73,6 +171,21 @@ hr {
     letter-spacing: 0.03em;
     text-align: left;
     color: #424436;
+
+    @media (max-width:768px) {
+        font-size: 32px;
+        line-height: 35.2px;
+        width: 354px;
+        height: 65px;
+        border: 1px solid #DDDDDD;
+        border-radius: 5px;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    @media (max-width:480px) {
+        display: none;
+    }
 }
 
 .value {
@@ -80,6 +193,18 @@ hr {
     height: 70px;
     margin: 32px 189px 32px 0;
     position: relative;
+
+    @media (max-width:768px) {
+        width: 309px;
+        height: 62px;
+        margin: 20px 45px 20px 0;
+    }
+
+    @media (max-width:480px) {
+        width: 210px;
+        height: 53px;
+        margin: 0 0 12px 0;
+    }
 }
 
 .price {
@@ -89,6 +214,18 @@ hr {
     line-height: 70.4px;
     color: #424436;
     margin-right: 32px;
+
+    @media (max-width:768px) {
+        font-size: 56px;
+        line-height: 61.6px;
+        margin-right: 20px;
+    }
+
+    @media (max-width:480px) {
+        font-size: 48px;
+        line-height: 52.8px;
+        margin-right: 12px;
+    }
 }
 
 .oldPrice {
@@ -99,11 +236,23 @@ hr {
     text-decoration: line-through;
     text-align: right;
     margin: 18px 16px 0 0;
+
+    @media (max-width:768px) {
+        font-size: 32px;
+        line-height: 41.6px;
+        margin: 19px 16px 0 0;
+    }
+
+    @media (max-width:480px) {
+        font-size: 28px;
+        line-height: 36.4px;
+    }
+
 }
 
 .discontPercent {
     position: absolute;
-    padding: 4px 8px 4px 8px;
+    padding: 4px 8px;
     border-radius: 7px;
     font-size: 20px;
     font-weight: 600;
@@ -114,12 +263,25 @@ hr {
     color: #fff;
     display: inline-block;
     margin-bottom: 36px;
+
+    @media (max-width:480px) {
+        font-size: 18px;
+        line-height: 23.4px;
+        display: none;
+    }
+
 }
 
 .addToCart {
     display: flex;
     gap: 32px;
     margin: 32px 0 32px 0;
+
+    @media (max-width:768px) {
+        display: grid;
+        margin: 0 0 20px 0;
+        gap: 20px;
+    }
 }
 
 
@@ -131,6 +293,12 @@ hr {
     border-radius: 5px;
     background-color: #FFFFFF;
     width: fit-content;
+    text-align: center;
+
+    @media (max-width:480px) {
+        width: 164px;
+        height: 47px;
+    }
 }
 
 .calcButton {
@@ -145,6 +313,12 @@ hr {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
+
+    @media (max-width:480px) {
+        width: 47px;
+        height: 47px;
+        padding: 16px;
+    }
 }
 
 .count {
@@ -159,6 +333,14 @@ hr {
     border-top: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
     color: #424436;
+
+    @media (max-width:480px) {
+        width: 146px;
+        height: 47px;
+        font-size: 18px;
+        line-height: 23.4px;
+        padding: 12px 31.5px;
+    }
 }
 
 .addToCart>button {
@@ -166,10 +348,36 @@ hr {
     color: #FFFFFF;
     width: 316px;
     height: 58px;
-    padding: 16px 32px 16px 32px;
+    padding: 16px 32px;
     border-radius: 5px;
     box-shadow: none;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+
+    @media (max-width:1000px) {
+        width: 275px;
+    }
+
+    @media (max-width:768px) {
+        width: 354px;
+    }
+
+    @media (max-width:480px) {
+        width: 210px;
+        height: 47px;
+        font-size: 18px;
+        line-height: 23.4px;
+        padding: 12px 20px;
+    }
+}
+
+.description {
+    @media (max-width:768px) {
+        display: none;
+    }
 }
 
 .description :first-child {
@@ -187,4 +395,39 @@ hr {
     line-height: 20.8px;
     text-align: left;
     color: #424436;
+}
+
+.hiddenDescription {
+    display: none;
+
+    @media (max-width:768px) {
+        display: grid;
+        margin-top: 20px;
+    }
+}
+
+.hiddenDescription :first-child {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #424436;
+
+    @media (max-width:480px) {
+        font-size: 18px;
+        line-height: 23.4px;
+    }
+}
+
+.hiddenDescription :last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+
+    @media (max-width:480px) {
+        font-size: 14px;
+        line-height: 18.2px;
+    }
 }

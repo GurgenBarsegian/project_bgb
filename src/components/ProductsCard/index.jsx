@@ -13,14 +13,14 @@ export default function ProductsCard({ id, image, title, price, discont_price}) 
 
   const tempPrice = () => {
 
-    if(discont_price === null){
+    if (discont_price === null) {
       return <p>${price}</p>
-    } else {  
+    } else {
       return <p>${discont_price} <span className={s.line}>${price}</span> <span className={s.discont}>-{discontProcent}%</span></p>
     }
-    }
+  }
 
-  
+
   return (
 
     <div  className={s.card}>

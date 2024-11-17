@@ -2,6 +2,7 @@ import React from 'react'
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
 import s from './index.module.css'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -18,8 +19,13 @@ export default function Footer() {
 
         <div className={s.socials}>
           <p className={s.socialsText}>Socials</p>
-          <RiInstagramFill className={s.socialsInstaIcon}/>
-          <IoLogoWhatsapp className={s.socialsWhatsappIcon}/>
+          <a href='https://www.instagram.com/'>
+            <RiInstagramFill className={s.socialsInstaIcon} />
+          </a>
+          <a href='https://web.whatsapp.com/'>
+            <IoLogoWhatsapp className={s.socialsWhatsappIcon} />
+          </a>
+
         </div>
 
         <div className={s.address}>
