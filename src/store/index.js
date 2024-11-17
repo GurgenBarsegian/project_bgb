@@ -15,6 +15,7 @@ const rootReducer = combineReducers({
     products: productsReducer,
     productsByCategory: productsByCategoryReducer,
     singleProduct:singleProductReducer,
+    cart: cartReducer
 
 })
 
