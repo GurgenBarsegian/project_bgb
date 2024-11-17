@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getProductsByCategories } from '../../requests/getProducts';
-import ProductsContainerForPage from '../../components/ProductsContainerForPage';
-import { useParams } from 'react-router-dom';
-import { getCategory } from '../../requests/categories';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getProductsByCategories } from "../../requests/getProducts";
+import ProductsContainerForPage from "../../components/ProductsContainerForPage";
+import { useParams } from "react-router-dom";
+import s from "./index.module.css";
+import { Link } from "react-router-dom";
+import { getCategory } from "../../requests/categories";
 
 export default function ProductsByCategoriesPage() {
+
 
   const { id } = useParams();
 
@@ -19,26 +21,26 @@ export default function ProductsByCategoriesPage() {
   useEffect(() =>{
     if(id){ 
       dispatch(getProductsByCategories(id))
-    }}, [id, dispatch]);
+    }}, []); // get the all products of one category using category id, via fetch-request and dispatch
 
   console.log(productsByCategoryState);
 
   
-  // Добавляем проверку на наличие продуктов перед доступом к `categoryId`
+  // Добавляем проверку на наличие продуктов перед доступом к categoryId
+  //Add a check for the availability of products before granting access to the categoryId.
   const categoryId = productsByCategoryState.products?.[0]?.categoryId;
 
   useEffect(() => {
-    if (categoryId) { // Проверяем, что categoryId определен
+    if (categoryId) { // Проверяем, что categoryId определен Check that the categoryId is defined
       dispatch(getCategory(categoryId)); 
     }
   }, [categoryId, dispatch]);
 
 
-  console.log(productsByCategoryState);
 
   return (
     <div>
-      <div >
+      <div className={s.breadCrumbs} >
               <Link to="/">Main Page</Link>
               <hr/>
               <Link to="/categories">Categories</Link>

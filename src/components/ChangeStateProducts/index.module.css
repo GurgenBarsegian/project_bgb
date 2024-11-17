@@ -1,14 +1,99 @@
-.change{
-    max-width: 1360px;
+.filter_container{
     margin: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 20px;
     color: #424436;
     align-items: center;
+}
+
+
+
+.filter_container label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.filter_container input[type="number"],
+.filter_container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.filter_container input[type="number"]:focus,
+.filter_container select:focus {
+    border-color: #007bff;
+}
+
+.filter_container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.filter_container .filter_section {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}
+
+.filter_container .checkbox_container {
+    display: flex;
+    align-items: center;
+}
+
+.filter_container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter_container button:hover {
+    background-color: #0056b3; 
+}
+@media (max-width: 1000px) {
+    .filter-container {
+        width: 100%; 
+        padding: 10px;
+    }
+}
+@media (max-width: 768px){
+    .filter-container{
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+@media (max-width: 480px){
+    .filter-container{
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 32px;
+    }
+    
 }

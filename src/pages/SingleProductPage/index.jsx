@@ -6,6 +6,7 @@ import { getSingleProduct } from "../../requests/products";
 import s from './index.module.css';
 import { getCategory } from "../../requests/categories";
 import { addProductToCartAction } from "../../store/reducers/cartReducer";
+import { domain } from "../../domain";
 
 export default function SingleProductPage() {
   const { product_id } = useParams();

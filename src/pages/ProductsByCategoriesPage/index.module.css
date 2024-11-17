@@ -1,20 +1,9 @@
-.products {
-    /* max-width: 1360px;
-    margin: auto;  */
-    color: #424436;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 30px;
-   
-    
-}
-
-
 .breadCrumbs {
     display: flex;
     align-items: center;
-  }
-  
-  .breadCrumbs>a {
+}
+
+.breadCrumbs>a {
     display: flex;
     padding: 8px 16px 8px 16px;
     border-radius: 5px;
@@ -24,24 +13,23 @@
     cursor: pointer;
     font-weight: 500;
     line-height: 20.16px;
-  }
-  
-  .breadCrumbs>a:hover {
+}
+
+.breadCrumbs>a:hover {
     background-color: #F2F6D3;
-  }
-  
-  .breadCrumbs>span {
+}
+
+.breadCrumbs>span {
     display: flex;
     padding: 8px 16px 8px 16px;
     border-radius: 5px;
     border: 1px solid #DDDDDD;
-  }
-  
-  hr {
+}
+
+hr {
     border: none;
     border-top: 1px solid #DDDDDD;
     /* Задайте яркий цвет для проверки */
     height: 2px;
-    /* width: 16px; */
-  }
-  
+    width: 16px;
+}

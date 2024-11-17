@@ -1,23 +1,88 @@
 .category_card {
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(177, 177, 177);
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+ justify-items: center;
+ align-items: center;
+   gap: 16px;
+  opacity: 0px;
+  width: 248px;
+  height: 392px;
+ 
+}
+
+.category_card img {
+  max-width: 248px;
+  height: 260px;
+  border-radius: 20px;
+}
+
+.category_card p  {
+  align-self: center;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px){
+  .category_card img {
+    max-width: 306px;
+    height: 205px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 768px){
+  .category_card img {
+    max-width: 354px;
+    height: 250px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 480px){
+ 
+  .category_card {
     display: flex;
-    font-size: 15px;
-    cursor: pointer;
+    font-size: 18px;
+       cursor: pointer;
     color: rgb(177, 177, 177);
     font-family: "Montserrat", sans-serif;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 16px;
+     gap: 15px;
     opacity: 0px;
-  }
-  
-  .category_card img {
-    width: 316px;
+    width: 248px;
     height: 392px;
-    /* object-fit: cover; */
+   
+  }
+  .category_card img {
+    max-width: 210px;
+    height: 292px;
     border-radius: 20px;
   }
-  
-  .category_card p {
+  .category_card p  {
     align-self: center;
+    text-decoration: none;
   }
+ }
+@media (max-width: 360px){
+ 
+  .category_card {
+    display: flex;
+    font-size: 18px;
+       cursor: pointer;
+    color: rgb(177, 177, 177);
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+     gap: 12px;
+    width: 320px;
+    height: 255px;
+   
+  }
+  .category_card img {
+    max-width: 320px;
+    height: 220px;
+    border-radius: 20px;
+  }
+
   
+}

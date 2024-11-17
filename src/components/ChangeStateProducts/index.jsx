@@ -9,7 +9,11 @@ export default function ChangeStateProducts() {
  
     
 
-    const allProductsState = useSelector(store => store.products);
+    const allProductsState = useSelector(store => 
+        store.products.filter(product => 
+            store.discountedOnly ? product.discounted : true
+        )
+    );
 
     const dispatch = useDispatch();
 
@@ -19,7 +23,9 @@ export default function ChangeStateProducts() {
 
     const [isChecked, setIsChecked] = useState(false);
     const handleCheck = () => setIsChecked(!isChecked);
-    const handleClick = e => dispatch(getDiscountedItemsAction(e.target.checked))
+    const handleClick = e => {
+        dispatch(getDiscountedItemsAction(e.target.checked));
+    };
 
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(Infinity);
@@ -34,29 +40,32 @@ export default function ChangeStateProducts() {
 
     return (
     <div >
-        <div className={s.change}> 
-        <div>
+        <div className={s.filter_container}> 
+        <div className={s.filter_section}>
             <label for="chk1">Price: </label>
             <input type="number" placeholder="from" name='min' onChange={handleMinValue}/>
             <input type="number" placeholder="to" name='max' onChange={handleMaxValue}/>
         </div>
-        <div>
+        <div className={s.checkbox_container}>
             <label for="chk1">Discounted items</label>
-            <input type="checkbox" checked={isChecked} onChange={handleCheck} onClick={handleClick}/>
+            <input type="checkbox" checked={isChecked} onChange={e => {
+                handleCheck();
+                handleClick(e);
+            }}/>
         </div>
-        <div >
+        <div className={s.filter_section}>
             <label >Sorted</label>
             <select onInput={sort}>
                 <option value="-">by default</option>
-                <option value="upside">upside</option>
-                <option value="downside">downside</option>
-                <option value="in alphabetic order">in alphabetic order</option>
+                <option value='upside'>upside</option>
+                <option value='downside'>downside</option>
+                <option value='in alphabetic order'>in alphabetic order</option>
             </select>
            
               </div>
         </div>
-        <ProductsContainer products={allProductsState}/> 
-        </div>
+        
+    </div>
     
   )
 }

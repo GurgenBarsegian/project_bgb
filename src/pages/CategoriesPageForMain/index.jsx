@@ -10,10 +10,10 @@ export default function CategoriesPageForMain() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(getCategories), []);
+  useEffect(() => dispatch(getCategories), []); //get all categories-names using fetch-request  
 
   return (
-    <div className={s.category}>
+    <div className={s.category} >
       <CategoriesContainer categories={categoriesState} />
     </div>
   );
