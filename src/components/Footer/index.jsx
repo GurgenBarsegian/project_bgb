@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -47,6 +47,3 @@ export default function Footer() {
     </footer>
   )
 }
-=======
-
->>>>>>> fe11390c72764016f42d1b9c35eb708b0333b5d3

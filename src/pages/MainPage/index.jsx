@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import s from './index.module.css'
 import { Link } from 'react-router-dom'
@@ -32,6 +31,4 @@ export default function MainPage() {
     </div>
   )
 }
-=======
 
->>>>>>> fe11390c72764016f42d1b9c35eb708b0333b5d3

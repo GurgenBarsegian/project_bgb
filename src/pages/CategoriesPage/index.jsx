@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { getCategories } from '../../requests/categories';
@@ -21,6 +20,3 @@ export default function CategoriesPage() {
     </div>
   )
 }
-=======
-
->>>>>>> fe11390c72764016f42d1b9c35eb708b0333b5d3
