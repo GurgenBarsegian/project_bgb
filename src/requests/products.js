@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { loadAllProductsAction } from "../store/reducers/productsReducer";
 import { loadSingleProductAction } from "../store/reducers/singleProductReducer" ;
 import { domain } from "../domain";
@@ -18,6 +17,3 @@ export const getSingleProduct = (product_id) => {
             .then(json => dispatch(loadSingleProductAction(json)) )
     )
 }
-=======
->>>>>>> fe11390c72764016f42d1b9c35eb708b0333b5d3
-
