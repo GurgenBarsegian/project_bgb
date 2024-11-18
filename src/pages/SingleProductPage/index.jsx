@@ -58,7 +58,7 @@ export default function SingleProductPage() {
 
             <div className={s.info}>
               <div className={s.imageContainer}>
-                <img src={`http://localhost:3333${image}`} alt={title} className={s.image} />
+                <img src={`${domain}${image}`} alt={title} className={s.image} />
                 <span className={s.hiddenDiscontPercent}>-{discontPercent}%</span>
               </div>
               <div className={s.allText}>

@@ -17,4 +17,3 @@ export const getSingleProduct = (product_id) => {
             .then(json => dispatch(loadSingleProductAction(json)) )
     )
 }
-
