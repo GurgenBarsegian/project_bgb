@@ -33,7 +33,7 @@ export default function SingleProductPage() {
     if (singleProductState.data.categoryId) {
       dispatch(getCategory(singleProductState.data.categoryId));
     }
-  }, [singleProductState.data.categoryId, dispatch]);
+  }, [singleProductState.data.categoryId]);
 
   const { id, image, title, description, price, discont_price } = singleProductState.data;
   const discontPercent = Math.round(100 - ((discont_price / price) * 100));
@@ -46,17 +46,21 @@ export default function SingleProductPage() {
           : <div className={s.singleProduct}>
             <div className={s.breadCrums}>
               <Link to="/">Main Page</Link>
-              <hr/>
+              <hr />
               <Link to="/categories">Categories</Link>
-              <hr/>
-              <Link to={`/categories/${id}`}>{categoryState.data.title}</Link>
-              <hr/>
+              <hr />
+              <Link to={`/categories/${singleProductState.data.categoryId}`}>{categoryState.data.title}</Link>
+              <hr />
               <span>{title}</span>
             </div>
 
-            <div className={s.info}>
-              <img src={`${domain}${image}`} alt={title} className={s.image} />
+            <h3 className={s.hiddenTitle}>{title}</h3>
 
+            <div className={s.info}>
+              <div className={s.imageContainer}>
+                <img src={`http://localhost:3333${image}`} alt={title} className={s.image} />
+                <span className={s.hiddenDiscontPercent}>-{discontPercent}%</span>
+              </div>
               <div className={s.allText}>
 
                 <h3>{title}</h3>
@@ -85,7 +89,13 @@ export default function SingleProductPage() {
                 </div>
               </div>
             </div>
+
+            <div className={s.hiddenDescription}>
+              <p>Description</p>
+              <p>{description}</p>
+            </div>
           </div>
+
       }
     </div>
   );

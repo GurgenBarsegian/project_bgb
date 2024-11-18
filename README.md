@@ -1,3 +1,37 @@
+About project
+
+'Home & Garden Online Store '
+Links to the layout:
+Technical specification :
+Deploy of store :
+Overview of the application:
+This online store is a dynamic, interactive application developed in JavaScript using the React library, Redux, Redux-Thunk, and React Hook Form 
+The main components of this online store are five pages (MainPage, Category Page, All Products, All Sales, Cart Page) with their respective components. 
+Users are offered home and garden products, categorized into a list of all products, products by category, and discounted items.
+To attract customers, a promotion has been created offering a 5% discount on the first order 
+Скриншот главной страницы проекта
+Основной функционал проекта ???
+
+Tech Stack
+
+A list of technologies used and their purposes:
+
+The following libraries were used in the creation of the application:
+React — This library helps create a user-friendly interface, allowing the page to avoid being overloaded with information and enabling the writing of HTML code within JS (JSX syntax extension).
+React-router-dom — Used for page routing within the application.
+React Redux — Used for state management in the application, storing (store) and controlling access and data flow, as well as handling actions (reducers, dispatch, actions).
+React-redux-thunk — Enables performing API requests and dispatching actions based on those requests.
+React-hook-form — Handles form validation, data processing, and sending data to the backend.
+
+Projects authors
+A list of the project authors and their contributions to the project
+
+Имя, фамилия участника команды:
+Gurgen Barsegyan (Teamlead, AllProductsPage, Sales, CartPage, OrderForm)
+Влада(Footer, SingleProductPage, BreadCrumbs )
+Kiryllo Korniltsev (Header,  'Amazing discounts on garden products on MainPage' ,Filters, Burgermenu, NavMenu, AddToCartButton, styles on MainPage + AllProductsPage)
+Katharina Asroun (Categories for MainPage, CategoriesPage, NotFoundPage, ProductsByCategoryPage, discount form)
+Contacts, linkedIn:
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

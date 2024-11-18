@@ -1,132 +1,232 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    font-family: Montserrat;
-}
+ * {
+     font-family: Montserrat;
+ }
 
-.footer {
-    /* position: fixed; */
-    padding: 0px 40px 80px 40px;
-    max-width: 1440px;
-    margin: auto;
-    height: 948px;
-    top: 2594px;
-    gap: 40px;
+ .footer {
+     padding: 0px 40px 80px 40px;
+     max-width: 1440px;
+     margin: auto;
+     height: 948px;
 
-}
+     @media (max-width: 1000px) {
+         padding: 0px 20px 60px 20px;
 
-.contactText {
-    font-size: 64px;
-    color: #424436;
-    margin-left: 20px;
-    margin-top: 70px;
-}
+     }
 
-.cardsWrapper {
-    display: grid;
-    grid-template-columns: 780px 548px;
-    grid-column-gap: 32px;
-    grid-row-gap: 32px;
-    margin-top: 40px;
-    margin-bottom: 32px;
-}
+ }
 
-.phone {
-    height: 150px;
-    padding: 32px;
-    background: #F2F6D3;
-    border-radius: 10px;
+ .contactText {
+     font-size: 64px;
+     color: #424436;
+     margin-left: 20px;
+     margin-top: 70px;
+     line-height: 70.4px;
 
-}
+     @media (max-width: 768px) {
+        font-size: 56px;
+        line-height: 61.6px;
+     }
 
-.phone :first-child {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #8B8B8B;
-}
+     @media (max-width:480px) {
+        font-size: 48px;
+        line-height: 52.8px;
+     }
+ }
 
-.phone :last-child {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
-    margin-top: 16px;
-    color: #424436;
-}
+ .cardsWrapper {
+     display: grid;
+     grid-template-columns: 780px 548px;
+     grid-column-gap: 32px;
+     grid-row-gap: 32px;
 
-.socials {
-    height: 150px;
-    padding: 32px;
-    background: #F2F6D3;
-    border-radius: 10px;
+     margin-top: 40px;
+     margin-bottom: 32px;
 
-}
+     @media (max-width: 1000px) {
+         grid-template-columns: 470px 470px;
+         grid-column-gap: 20px;
+         grid-row-gap: 20px;
+         margin-top: 32px;
+     }
 
-.socialsText {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #8B8B8B;
-}
+     @media (max-width: 768px) {
+        grid-template-columns: 479px 229px;
+        margin-top: 32px;
+        margin-bottom: 20px;
+     }
 
-.socials svg {
-    color: black;
-    width: 43px;
-    height: 44px;
-    margin-top: 16px;
-    color: #424436;
-}
+     @media (max-width:480px) {
+        grid-template-columns: 440px;
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;        
+        margin-top: 24px;
+        margin-bottom: 20px;
+     }
+ }
 
-.address {
-    height: 194px;
-    padding: 32px;
-    background: #F2F6D3;
-    border-radius: 10px;
-}
+ .phone {
+     height: 150px;
+     padding: 32px;
+     background: #F2F6D3;
+     border-radius: 10px;
 
-.address :first-child {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #8B8B8B;
-}
+     @media (max-width:480px) {
+        padding: 24px 0px 0px 20px;
+     }
+ }
 
-.address :last-child {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
-    margin-top: 16px;
-    color: #424436;
-}
+ .phone :first-child {
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 26px;
+     color: #8B8B8B;
 
-.hours {
-    height: 194px;
-    padding: 32px;
-    border-radius: 10px;
-    background-color: #f2f6d3;
-}
+     @media (max-width:480px) {
+        font-size: 18px;
+        line-height: 23.4px;
+     }
+ }
 
-.hours :first-child {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #8B8B8B;
-}
+ .phone :last-child {
+     font-size: 40px;
+     font-weight: 600;
+     line-height: 44px;
+     margin-top: 16px;
+     color: #424436;
 
-.hours :last-child {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
-    color: #424436;
-    margin-top: 16px;
+     @media (max-width:480px) {
+        font-size: 28px;
+        line-height: 30.8px;
+     }
+ }
 
-}
+ .socials {
+     height: 150px;
+     padding: 32px;
+     background: #F2F6D3;
+     border-radius: 10px;
+
+     @media (max-width:480px) {
+        padding: 24px 0px 0px 20px;
+     }
+ }
+
+ .socialsText {
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 26px;
+     color: #8B8B8B;
+
+     @media (max-width:480px) {
+        font-size: 18px;
+        line-height: 23.4px;
+     }
+ }
+
+ .socialsInstaIcon {
+     margin-right: 16px;
+ }
+
+ .socials svg {
+     color: black;
+     width: 43px;
+     height: 44px;
+     margin-top: 16px;
+     color: #424436;
+ }
+
+ .address {
+     height: 194px;
+     padding: 32px;
+     background: #F2F6D3;
+     border-radius: 10px;
+
+     @media (max-width: 1000px) {
+         height: 298px;
+     }
+
+     @media (max-width:480px) {
+        padding: 24px 0px 0px 20px;
+     }
+ }
+
+ .address :first-child {
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 26px;
+     color: #8B8B8B;
+
+     @media (max-width:480px) {
+        font-size: 18px;
+        line-height: 23.4px;
+     }
+ }
+
+ .address :last-child {
+     font-size: 40px;
+     font-weight: 600;
+     line-height: 44px;
+     margin-top: 16px;
+     color: #424436;
+
+     @media (max-width:480px) {
+        font-size: 28px;
+        line-height: 30.8px;
+     }
+ }
+
+ .hours {
+     height: 194px;
+     padding: 32px;
+     border-radius: 10px;
+     background-color: #f2f6d3;
+
+     @media (max-width: 1000px) {
+         height: 298px;
+     }
+
+     @media (max-width:480px) {
+        padding: 24px 0px 0px 20px;
+     }
+ }
+
+ .hours :first-child {
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 26px;
+     color: #8B8B8B;
+
+     @media (max-width:480px) {
+        font-size: 18px;
+        line-height: 23.4px;
+     }
+ }
+
+ .hours :last-child {
+     font-size: 40px;
+     font-weight: 600;
+     line-height: 44px;
+     color: #424436;
+     margin-top: 16px;
+
+     @media (max-width:480px) {
+        font-size: 28px;
+        line-height: 30.8px;
+     }
+
+ }
 
 
-.map {
-    width: 1360px;
-    height: 350px;
-    max-width: 100%;
-    border: none;
-    border-radius: 10px;
-}
+ .map {
+     width: 1360px;
+     height: 350px;
+     max-width: 100%;
+     border: none;
+     border-radius: 10px;
+
+     @media (max-width: 1000px) {
+         height: 250px;
+     }
+ }
