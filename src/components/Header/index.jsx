@@ -22,7 +22,7 @@ export default function Header() {
         {
           cartState.length === 0
           ? ''
-          : <span className={s.number}>{ totalCount }</span>
+          : <div className={s.number}>{ totalCount }</div>
         }
         </Link>
         <MdOutlineMenu onClick={openMenu}/>
