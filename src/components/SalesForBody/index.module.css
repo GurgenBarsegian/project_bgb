@@ -1,5 +1,5 @@
 .body_sales{
-    width: 1440px;
+    width: 1360px;
     margin: auto;
     margin-top: 60px;
     display: grid; 
@@ -7,13 +7,14 @@
     border-top: 1px solid rgb(207, 207, 207);
     gap: 30px;
     position: relative;
-    justify-content: center;
+    justify-content: center; 
     left: 15px;
     margin-bottom: 25px;
 }
 
 .body_sales div {
-    margin-top: 33px;   
+    margin-top: 33px;
+       
 }
 
 .body_sales img {

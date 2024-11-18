@@ -1,4 +1,6 @@
-.container {
+.container { max-width: 1360px;
+    margin: auto;
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* width: 100%; */

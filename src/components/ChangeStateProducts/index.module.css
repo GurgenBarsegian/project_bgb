@@ -1,10 +1,10 @@
 .filter_container{
+    max-width: 1360px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
     display: flex;
-    justify-content: flex-start;
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -19,6 +19,7 @@
     font-weight: 500;
     color: #333;
     margin-bottom: 5px;
+    
 }
 
 .filter_container input[type="number"],
