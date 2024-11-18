@@ -152,7 +152,7 @@ hr {
 
     @media (max-width:768px) {
         width: 354px;
-        height: 273px;
+        height: auto;
         margin-top: 32px;
     }
 
@@ -175,12 +175,6 @@ hr {
     @media (max-width:768px) {
         font-size: 32px;
         line-height: 35.2px;
-        width: 354px;
-        height: 65px;
-        border: 1px solid #DDDDDD;
-        border-radius: 5px;
-        padding: 10px;
-        overflow: auto;
     }
 
     @media (max-width:480px) {
@@ -395,6 +389,8 @@ hr {
     line-height: 20.8px;
     text-align: left;
     color: #424436;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hiddenDescription {
