@@ -1,8 +1,4 @@
 
-// const defaultState = {
-//     data: [],
-//     status: 'loading'
-// }
 
 const defaultState = {
     products: [],

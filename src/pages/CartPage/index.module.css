@@ -95,3 +95,18 @@
     background: #92a134;
     margin-top: 15px;
 }
+@media (max-width: 1000px){
+    .cart {
+        max-width: 470px;
+        margin: auto;
+        color: #424436;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 30px;
+    }
+    .list{
+        border-radius: 12px;
+        width: 470px;
+        margin-right: 20px;
+        
+    }
+}

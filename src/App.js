@@ -16,15 +16,11 @@ import "./App.css";
 import SingleProductPage from './pages/SingleProductPage';
 
 
-
-
-
 function App() {
 
-
-    const [menuActive, setMenuActiv] = useState(false)
-    const openMenu = () => setMenuActiv(true)
-    const closeMenu = () => setMenuActiv(false)
+  const [menuActive, setMenuActiv] = useState(false)
+  const openMenu = () => setMenuActiv(true)
+  const closeMenu = () => setMenuActiv(false)
   
   return (
 

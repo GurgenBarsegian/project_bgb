@@ -96,4 +96,32 @@
     right: 10px;
     font-size: 30px;
   }
-  
+  @media (max-width: 1000px){
+    .card {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 20px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      width: 470px;
+      height: 192px;
+      background: #fff;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .image {
+      border: 1px solid #ddd;
+      border-radius: 12px 0 0 12px;
+      width: 200px;
+      height: 192px;
+    }
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.3;
+      color: #424436;
+      
+    }
+  }
