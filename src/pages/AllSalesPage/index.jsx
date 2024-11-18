@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../requests/getProducts';
@@ -31,3 +32,6 @@ export default function AllSalesPage() {
     )
 }
 
+=======
+
+>>>>>>> fe11390c72764016f42d1b9c35eb708b0333b5d3
