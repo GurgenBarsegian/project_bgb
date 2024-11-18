@@ -5,10 +5,10 @@
   color: rgb(177, 177, 177);
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  gap: 16px;
-  opacity: 0px;
+ justify-items: center;
+ align-items: center;
+   gap: 16px;
+
   width: 248px;
   height: 392px;
 }
