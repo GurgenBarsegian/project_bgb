@@ -25,13 +25,13 @@
      line-height: 70.4px;
 
      @media (max-width: 768px) {
-        font-size: 56px;
-        line-height: 61.6px;
+         font-size: 56px;
+         line-height: 61.6px;
      }
 
      @media (max-width:480px) {
-        font-size: 48px;
-        line-height: 52.8px;
+         font-size: 48px;
+         line-height: 52.8px;
      }
  }
 
@@ -52,17 +52,17 @@
      }
 
      @media (max-width: 768px) {
-        grid-template-columns: 479px 229px;
-        margin-top: 32px;
-        margin-bottom: 20px;
+         grid-template-columns: 479px 229px;
+         margin-top: 32px;
+         margin-bottom: 20px;
      }
 
      @media (max-width:480px) {
-        grid-template-columns: 440px;
-        grid-column-gap: 12px;
-        grid-row-gap: 12px;        
-        margin-top: 24px;
-        margin-bottom: 20px;
+         grid-template-columns: 440px;
+         grid-column-gap: 12px;
+         grid-row-gap: 12px;
+         margin-top: 24px;
+         margin-bottom: 20px;
      }
  }
 
@@ -73,7 +73,8 @@
      border-radius: 10px;
 
      @media (max-width:480px) {
-        padding: 24px 0px 0px 20px;
+         height: 114px;
+         padding: 24px 0px 0px 20px;
      }
  }
 
@@ -84,8 +85,8 @@
      color: #8B8B8B;
 
      @media (max-width:480px) {
-        font-size: 18px;
-        line-height: 23.4px;
+         font-size: 18px;
+         line-height: 23.4px;
      }
  }
 
@@ -97,8 +98,8 @@
      color: #424436;
 
      @media (max-width:480px) {
-        font-size: 28px;
-        line-height: 30.8px;
+         font-size: 28px;
+         line-height: 30.8px;
      }
  }
 
@@ -109,7 +110,9 @@
      border-radius: 10px;
 
      @media (max-width:480px) {
-        padding: 24px 0px 0px 20px;
+        display: flex;
+         height: 92px;
+         padding: 24px 20px;
      }
  }
 
@@ -120,21 +123,28 @@
      color: #8B8B8B;
 
      @media (max-width:480px) {
-        font-size: 18px;
-        line-height: 23.4px;
+         top: 20px;
+         font-size: 18px;
+         line-height: 23.4px;
+         margin-right: 20px;
      }
  }
 
  .socialsInstaIcon {
      margin-right: 16px;
+     @media (max-width:480px) {
+        margin-right: 12px;
+     }
  }
 
  .socials svg {
-     color: black;
      width: 43px;
      height: 44px;
      margin-top: 16px;
      color: #424436;
+     @media (max-width:480px) {
+        margin-top: 0;
+     }
  }
 
  .address {
@@ -148,7 +158,8 @@
      }
 
      @media (max-width:480px) {
-        padding: 24px 0px 0px 20px;
+         height: 145px;
+         padding: 24px 0px 0px 20px;
      }
  }
 
@@ -159,8 +170,8 @@
      color: #8B8B8B;
 
      @media (max-width:480px) {
-        font-size: 18px;
-        line-height: 23.4px;
+         font-size: 18px;
+         line-height: 23.4px;
      }
  }
 
@@ -172,8 +183,8 @@
      color: #424436;
 
      @media (max-width:480px) {
-        font-size: 28px;
-        line-height: 30.8px;
+         font-size: 28px;
+         line-height: 30.8px;
      }
  }
 
@@ -188,7 +199,8 @@
      }
 
      @media (max-width:480px) {
-        padding: 24px 0px 0px 20px;
+         height: 114px;
+         padding: 24px 0px 0px 20px;
      }
  }
 
@@ -199,8 +211,8 @@
      color: #8B8B8B;
 
      @media (max-width:480px) {
-        font-size: 18px;
-        line-height: 23.4px;
+         font-size: 18px;
+         line-height: 23.4px;
      }
  }
 
@@ -212,8 +224,8 @@
      margin-top: 16px;
 
      @media (max-width:480px) {
-        font-size: 28px;
-        line-height: 30.8px;
+         font-size: 28px;
+         line-height: 30.8px;
      }
 
  }
